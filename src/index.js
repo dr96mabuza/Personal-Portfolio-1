@@ -9,6 +9,8 @@ const project5 = document.querySelector("#project5");
 const project6 = document.querySelector("#project6");
 const headerImageContainer = document.querySelector("#headerImageContainer");
 const footer = document.querySelector("#footer");
+const email = document.querySelector("#email");
+const phone = document.querySelector("#phone");
 
 const myImage = new Image();
 myImage.src = require("./images/pexels-pixabay-210881.jpg");
@@ -34,6 +36,14 @@ myImage6.src = require("./images/fleur-dQf7RZhMOJU-unsplash.jpg");
 const myImage7 = new Image();
 myImage7.src = require("./images/dan-cristian-padure-noOXRT9gfQ8-unsplash.jpg");
 
+const phoneIcon = new Image();
+phoneIcon.setAttribute("class", "contactIcon");
+phoneIcon.src = require("./icons/phone-outline.svg");
+
+const emailIcon = new Image();
+emailIcon.setAttribute("class", "contactIcon");
+emailIcon.src = require("./icons/email-outline.svg");
+
 headerImageContainer.appendChild(myImage6);
 project1.appendChild(myImage);
 project2.appendChild(myImage1);
@@ -42,3 +52,5 @@ project4.appendChild(myImage3);
 project5.appendChild(myImage4);
 project6.appendChild(myImage5);
 footer.appendChild(myImage7);
+email.appendChild(emailIcon);
+phone.appendChild(phoneIcon);

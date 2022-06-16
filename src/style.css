@@ -17,6 +17,8 @@ h2 {
 #projectsContainer,
 .project,
 #footer-icons,
+.nameAndIcons,
+#headerIcons,
 .contactDetails {
   display: flex;
 }
@@ -25,7 +27,9 @@ h2 {
 #footer,
 #headerIcons,
 #projectsContainer,
-#mid {
+#mid,
+#footer-icons,
+#headerIcons {
   align-items: center;
 }
 
@@ -34,17 +38,24 @@ h2 {
 #headerIcons,
 #projectsContainer,
 #footer-icons,
-.contactDetails {
+.nameAndIcons,
+#informationContainer {
   flex-direction: row;
 }
 
 #header,
-#footer {
+#footer,
+#projectsContainer {
   flex-wrap: wrap;
+}
+
+#header,
+#footer {
   justify-content: center;
 }
 
-#mid {
+#mid,
+#informationContainer {
   flex-direction: column;
 }
 
@@ -54,15 +65,14 @@ h2 {
   margin: 20px;
 }
 
-img {
-  width: 100%;
+#footer-icons,
+#headerIcons {
+  justify-content: right;
+  gap: 10px;
 }
 
-/*change this to include all icons*/
-#headerIcons,
-.project-icon {
-  height: 30px;
-  width: 30px;
+img {
+  width: 100%;
 }
 
 /*header section*/
@@ -86,14 +96,20 @@ img {
 
 #headerTextContainer {
   max-width: 500px;
+  padding: 15px;
+  border: solid black 1px;
+}
+
+#header-icons {
+  width: 30px;
 }
 
 /*mid section*/
 
 #projectsContainer {
-  flex-wrap: wrap;
   gap: 10px;
   max-width: 1000px;
+  justify-content: center;
 }
 
 .project {
@@ -101,18 +117,45 @@ img {
   max-width: 300px;
 }
 
+.Projectdescription {
+  padding: 8px 15px;
+  border: solid black 1px;
+}
+
+.nameAndIcons {
+  justify-content: space-between;
+}
+.project-icon {
+  height: 15px;
+  width: 15px;
+}
+
 /*footer section*/
 #footer {
   margin-top: 40px;
 }
 
+#footer img {
+  max-width: 400px;
+}
+
 #informationContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  max-width: 300px;
+  gap: 10px;
+  max-width: 400px;
+  padding: 30px;
+}
+
+.footerIcons {
+  width: 30px;
+  height: 30px;
+}
+
+.contactIcon {
+  width: 20px;
+  height: 20px;
 }
 
 .contactDetails {
-  gap: 9px;
+  flex-direction: row-reverse;
+  justify-content: left;
 }
