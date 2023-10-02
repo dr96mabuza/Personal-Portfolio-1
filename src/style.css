@@ -62,7 +62,7 @@ h2 {
 #header,
 #footer,
 #mid {
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 #footer-icons,
@@ -78,18 +78,27 @@ img {
 /*header section*/
 
 #header {
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-bottom: 40px;
+  background: linear-gradient(
+    to bottom right,
+    #4682b4 00%,
+    #4682b4 50%,                                                                 
+    white 50%,
+    white 100%
+  );
 }
 
 #headerImageContainer {
   position: relative;
-  max-width: 400px;
+  max-width: 680px;
 }
 
 #name {
   position: absolute;
-  top: 80%;
-  left: 20%;
+  top: 90%;
+  left: 2%;
   color: white;
   font-size: 2rem;
 }
@@ -98,6 +107,7 @@ img {
   max-width: 500px;
   padding: 15px;
   border: solid black 1px;
+  background-color: white;
 }
 
 #header-icons {
@@ -108,13 +118,13 @@ img {
 
 #projectsContainer {
   gap: 10px;
-  max-width: 1000px;
+  max-width: 1300px;
   justify-content: center;
 }
 
 .project {
   flex-direction: column-reverse;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .Projectdescription {
@@ -132,16 +142,19 @@ img {
 
 /*footer section*/
 #footer {
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #4682b4;
+  align-items: flex-start;
 }
 
 #footer img {
-  max-width: 400px;
+  max-width: 600px;
 }
 
 #informationContainer {
   gap: 10px;
-  max-width: 400px;
+  max-width: 650px;
   padding: 30px;
 }
 
