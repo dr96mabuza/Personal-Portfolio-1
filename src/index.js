@@ -30,8 +30,8 @@ myImage4.src = require("./images/haupes-I7iJOE4fsYo-unsplash.jpg");
 const myImage5 = new Image();
 myImage5.src = require("./images/greg-rosenke-xoxnfVIE7Qw-unsplash.jpg");
 
-const myImage6 = new Image();
-myImage6.src = require("./images/fleur-dQf7RZhMOJU-unsplash.jpg");
+const heroImage = new Image();
+heroImage.src = require("./images/204Sifiso Mabuza simabuz022.jpg");
 
 const myImage7 = new Image();
 myImage7.src = require("./images/dan-cristian-padure-noOXRT9gfQ8-unsplash.jpg");
@@ -44,7 +44,7 @@ const emailIcon = new Image();
 emailIcon.setAttribute("class", "contactIcon");
 emailIcon.src = require("./icons/email-outline.svg");
 
-headerImageContainer.appendChild(myImage6);
+headerImageContainer.appendChild(heroImage);
 project1.appendChild(myImage);
 project2.appendChild(myImage1);
 project3.appendChild(myImage2);
