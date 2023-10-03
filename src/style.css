@@ -67,7 +67,6 @@ h2 {
 
 #footer-icons,
 #headerIcons {
-  justify-content: right;
   gap: 10px;
 }
 
@@ -114,6 +113,10 @@ img {
   width: 30px;
 }
 
+#headerIcons {
+  justify-content: right;
+}
+
 
 /*mid section*/
 
@@ -142,8 +145,8 @@ img {
   width: 15px;
 }
 
-#mid :h2 {
-  margin-bottom: 10px;
+#mid > h2 {
+  margin-bottom: 13px;
 }
 
 /*footer section*/
@@ -182,4 +185,15 @@ img {
 
 .contactDetails :first-child {
   padding-left: 10px;
+}
+
+#footer-icons {
+  justify-content: left;
+}
+
+#informationContainer > h2,
+#informationContainer > p,
+#email > p,
+#phone > p{
+  color: white;
 }
