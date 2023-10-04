@@ -1,1 +1,3 @@
 /node_modules
+dist/*.jpg
+dist/*.svg
