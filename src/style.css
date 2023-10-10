@@ -129,7 +129,6 @@ img {
 .project {
   flex-direction: column-reverse;
   width: 400px;
-  height: 400px;
 }
 
 .Projectdescription {
@@ -147,6 +146,15 @@ img {
 
 #mid > h2 {
   margin-bottom: 13px;
+}
+
+#project1 > img,
+#project2 > img,
+#project3 > img,
+#project4 > img,
+#project5 > img,
+#project6 > img {
+  height: 400px;
 }
 
 /*footer section*/
