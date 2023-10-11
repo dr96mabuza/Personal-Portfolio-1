@@ -93,6 +93,7 @@ img {
 #headerImageContainer {
   position: relative;
   max-width: 680px;
+  /* margin: 0px 50px; */
 }
 
 #name {
@@ -167,6 +168,12 @@ img {
 
 #footer img {
   max-width: 600px;
+}
+
+#informationContainer > h2 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 #informationContainer {
