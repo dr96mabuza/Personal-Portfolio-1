@@ -212,3 +212,23 @@ img {
 #phone > p{
   color: white;
 }
+
+
+@media (max-width: 600px) {
+  #header {
+    padding: 10% 10% 0% 10%;
+  }
+
+  #projectsContainer {
+    width: 82%;
+  }
+
+  #project1 > img,
+  #project2 > img,
+  #project3 > img,
+  #project4 > img,
+  #project5 > img,
+  #project6 > img {
+    height: 100vw;
+  }
+}
