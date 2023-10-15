@@ -161,7 +161,7 @@ section {
 }
 
 #footer img {
-  max-width: 512px;
+  max-width: 46vw;
 }
 
 #informationContainer > h2 {
@@ -172,7 +172,7 @@ section {
 
 #informationContainer {
   gap: 10px;
-  max-width: 650px;
+  width: 46vw;
   padding: 30px;
 }
 
