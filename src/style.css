@@ -6,8 +6,8 @@ h2 {
   font-size: 1.8rem;
 }
 
-#content {
-  width: 100vw;
+body {
+  width: auto;
 }
 
 #header,
@@ -59,12 +59,6 @@ h2 {
   flex-direction: column;
 }
 
-#header,
-#footer,
-#mid {
-  /* margin: 20px; */
-}
-
 #footer-icons,
 #headerIcons {
   gap: 10px;
@@ -75,12 +69,14 @@ img {
   height: 100%;
 }
 
+section {
+  margin-bottom: 5%;
+}
+
 /*header section*/
 
 #header {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  /* width: 85vw; */
   background: linear-gradient(
     to bottom right,
     #4682b4 00%,
@@ -92,8 +88,7 @@ img {
 
 #headerImageContainer {
   position: relative;
-  max-width: 680px;
-  /* margin: 0px 50px; */
+  max-width: 40%;
 }
 
 #name {
@@ -105,8 +100,8 @@ img {
 }
 
 #headerTextContainer {
-  max-width: 500px;
-  padding: 15px;
+  max-width: 40vw;
+  padding: 3%;
   background-color: white;
 }
 
@@ -122,14 +117,13 @@ img {
 /*mid section*/
 
 #projectsContainer {
-  gap: 10px;
-  max-width: 1300px;
+  gap: 1vw;
   justify-content: center;
 }
 
 .project {
   flex-direction: column-reverse;
-  width: 400px;
+  width: 30vw;
 }
 
 .Projectdescription {
@@ -155,7 +149,7 @@ img {
 #project4 > img,
 #project5 > img,
 #project6 > img {
-  height: 400px;
+  height: 30vw;
 }
 
 /*footer section*/
@@ -167,7 +161,7 @@ img {
 }
 
 #footer img {
-  max-width: 600px;
+  max-width: 512px;
 }
 
 #informationContainer > h2 {
@@ -214,9 +208,15 @@ img {
 }
 
 
-@media (max-width: 600px) {
-  #header {
-    padding: 10% 10% 0% 10%;
+@media (max-width: 500px) {
+  /* #header {
+    display: block;
+    justify-self: center;
+    align-items: center;
+  } */
+
+  .project {
+    width: 90vw;
   }
 
   #projectsContainer {
@@ -232,3 +232,16 @@ img {
     height: 100vw;
   }
 }
+
+/* @media (max-width: 950px) and (min-width: 601px) {
+  .project {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #projectsContainer {
+    width: 49vw;
+  }
+} */
