@@ -213,19 +213,21 @@ section {
     height: 100vh;
   }
 
+  #project1, .project {
+    margin: 0vh 0vh 2.5vh 0vh;
+  }
+
   #project1 {
-    height: 90vh;
-    margin: 2.5vh 0vh;
+    height: 82vh;
   }
 
   .project {
     width: 90vw;
     height: 95vh;
-    margin: 2.5vh 0vh;
   }
 
   #projectsContainer {
-    width: 82%;
+    width: 90vw;
   }
 
   #project1 > img,
