@@ -213,12 +213,17 @@ section {
     height: 100vh;
   }
 
+  #mid > h2 {
+    height: 5vh;
+    margin: 0;
+  }
+
   #project1, .project {
     margin: 0vh 0vh 2.5vh 0vh;
   }
 
   #project1 {
-    height: 82vh;
+    height: 90vh;
   }
 
   .project {
