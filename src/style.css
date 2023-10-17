@@ -123,7 +123,7 @@ section {
 
 .project {
   flex-direction: column-reverse;
-  width: 30vw;
+  width: 25vw;
 }
 
 .Projectdescription {
@@ -209,14 +209,19 @@ section {
 
 
 @media (max-width: 500px) {
-  /* #header {
-    display: block;
-    justify-self: center;
-    align-items: center;
-  } */
+  #header {
+    height: 100vh;
+  }
+
+  #project1 {
+    height: 90vh;
+    margin: 2.5vh 0vh;
+  }
 
   .project {
     width: 90vw;
+    height: 95vh;
+    margin: 2.5vh 0vh;
   }
 
   #projectsContainer {
@@ -229,7 +234,15 @@ section {
   #project4 > img,
   #project5 > img,
   #project6 > img {
-    height: 100vw;
+    height: 90%;
+  }
+
+  section#footer {
+    height: 100vh;
+  }
+
+  #footer > img {
+    height: 50vh;
   }
 }
 
