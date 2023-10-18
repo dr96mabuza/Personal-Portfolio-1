@@ -217,6 +217,20 @@ section {
     height: 100vh;
   }
 
+  #headerImageContainer {
+    height: 40vh;
+    max-width: 90vw;
+  }
+
+  #headerImageContainer > img {
+    width: 100%;
+  }
+
+  #headerTextContainer {
+    max-width: 84vw;
+    max-height: 70vh;
+  }
+
   #mid > h2 {
     height: 5vh;
     margin: 0;
