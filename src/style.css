@@ -215,11 +215,13 @@ section {
 @media (max-width: 500px) {
   #header {
     height: 100vh;
+    align-items: center;
+    justify-content: start;
   }
 
   #headerImageContainer {
-    height: 40vh;
     max-width: 90vw;
+    margin-top: 5vw;
   }
 
   #headerImageContainer > img {
@@ -228,7 +230,6 @@ section {
 
   #headerTextContainer {
     max-width: 84vw;
-    max-height: 70vh;
   }
 
   #mid > h2 {
