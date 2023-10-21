@@ -1,9 +1,20 @@
 * {
   font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1em;
 }
 
 body {
@@ -135,6 +146,11 @@ section {
 .nameAndIcons {
   justify-content: space-between;
 }
+
+.nameAndIcons > p {
+  font-weight: bold;
+}
+
 .project-icon {
   height: 15px;
   width: 15px;
@@ -159,6 +175,7 @@ section {
   margin-bottom: 0%;
   background-color: #4682b4;
   align-items: flex-start;
+  height: auto;
 }
 
 #informationContainer > h2 {
@@ -169,7 +186,7 @@ section {
 
 #informationContainer {
   gap: 10px;
-  width: 46vw;
+  max-width: 45vw;
   padding: 30px;
 }
 
@@ -207,12 +224,12 @@ section {
 #footer > img {
   margin: 5vw;
   margin-top: 3vw;
-  max-width: 40vw;
-  max-height: 40vw;
+  max-width: 45vw;
+  height: auto;
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 426px) {
   #header {
     height: 100vh;
     align-items: center;
@@ -230,11 +247,6 @@ section {
 
   #headerTextContainer {
     max-width: 84vw;
-  }
-
-  #mid > h2 {
-    height: 5vh;
-    margin: 0;
   }
 
   #project1, .project {
@@ -268,15 +280,19 @@ section {
   }
 
   #informationContainer {
-    padding: 0;
-    width: 90vw;
+    /* margin-left: 1vw; */
+    max-width: fit-content;
     margin-top: 5vw;
-    height: 50vh;
+    height: 40vh;
+  }
+
+  #informationContainer > h2 {
+    padding-top: 2vh;
   }
 
   #footer > img {
     max-width: 100vw;
-    max-height: 50vh;
+    height: 50vh;
     margin: 0;
   }
 
@@ -285,7 +301,7 @@ section {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 769px) {
   #headerImageContainer {
     width: 90vw;
     /* height: 80vw; */
