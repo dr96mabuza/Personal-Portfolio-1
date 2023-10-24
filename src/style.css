@@ -233,20 +233,23 @@ section {
   #header {
     height: 100vh;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
   }
 
   #headerImageContainer {
-    max-width: 90vw;
     margin-top: 5vw;
+    max-width: 90vw;
+    height: 40vh;
   }
 
   #headerImageContainer > img {
     width: 100%;
+    /* height: 40vh; */
   }
 
   #headerTextContainer {
     max-width: 84vw;
+    height: 55vh;
   }
 
   #project1, .project {
