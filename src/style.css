@@ -229,7 +229,7 @@ section {
 }
 
 
-@media (max-width: 426px) {
+@media (max-width: 425px) {
   #header {
     height: 100vh;
     align-items: center;
@@ -301,7 +301,7 @@ section {
   }
 }
 
-@media (max-width: 769px) {
+@media (min-width: 426px) and (max-width: 769px) {
   #headerImageContainer {
     width: 90vw;
     /* height: 80vw; */
@@ -313,6 +313,23 @@ section {
     margin: 0;
     padding: 0;
     align-items: space-evenly;
+  }
+
+  #projectsContainer {
+    width: 90vw;
+    /* flex-direction: column; */
+  }
+
+  .project {
+    width: 40vw ;
+  }
+
+  #footer > img {
+    max-width: 40vw;
+  }
+
+  #informationContainer {
+    width: 40vw;
   }
 }
 
