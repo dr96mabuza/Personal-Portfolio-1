@@ -135,7 +135,7 @@ section {
 
 .project {
   flex-direction: column-reverse;
-  width: 25vw;
+  width: 30vw;
 }
 
 .Projectdescription {
@@ -226,112 +226,4 @@ section {
   margin-top: 3vw;
   max-width: 40vw;
   height: auto;
-}
-
-
-@media (max-width: 425px) {
-  #header {
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #headerImageContainer {
-    margin-top: 5vw;
-    max-width: 90vw;
-    height: 40vh;
-  }
-
-  #headerImageContainer > img {
-    width: 100%;
-    /* height: 40vh; */
-  }
-
-  #headerTextContainer {
-    max-width: 84vw;
-    height: 55vh;
-  }
-
-  #project1, .project {
-    margin: 0vh 0vh 2.5vh 0vh;
-  }
-
-  #project1 {
-    height: 90vh;
-  }
-
-  .project {
-    width: 90vw;
-    height: 95vh;
-  }
-
-  #projectsContainer {
-    width: 90vw;
-  }
-
-  #project1 > img,
-  #project2 > img,
-  #project3 > img,
-  #project4 > img,
-  #project5 > img,
-  #project6 > img {
-    height: 90%;
-  }
-
-  section#footer {
-    height: 100vh;
-  }
-
-  #informationContainer {
-    /* margin-left: 1vw; */
-    max-width: fit-content;
-    margin-top: 5vw;
-    height: 40vh;
-  }
-
-  #informationContainer > h2 {
-    padding-top: 2vh;
-  }
-
-  #footer > img {
-    max-width: 100vw;
-    height: 50vh;
-    margin: 0;
-  }
-
-  #footer {
-    gap: 0;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 769px) {
-  #headerImageContainer {
-    width: 90vw;
-    /* height: 80vw; */
-  }
-  #header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    align-items: space-evenly;
-  }
-
-  #projectsContainer {
-    width: 90vw;
-    /* flex-direction: column; */
-  }
-
-  .project {
-    width: 40vw ;
-  }
-
-  #footer > img {
-    max-width: 40vw;
-  }
-
-  #informationContainer {
-    width: 40vw;
-  }
 }

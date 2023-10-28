@@ -1,5 +1,7 @@
-import "./meyer.css";
-import "./style.css";
+import "./style/meyer.css";
+import "./style/style.css";
+import "./style/tabletStyle.css";
+import "./style/mobileStyle.css";
 
 const project1 = document.querySelector("#project1");
 const project2 = document.querySelector("#project2");
