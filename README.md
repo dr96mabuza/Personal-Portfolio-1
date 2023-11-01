@@ -1,11 +1,11 @@
 # Personal Portfolio
 
 ## Docs
-  - [Project Status](## Project Status)
-  - [Description](## Description)
-  - [Designs](### Designs)
-  - [Installations](## Installations)
-  - [Usage](##Usage)
+  - [Project Status](#project-status)
+  - [Description](#description)
+  - [Designs](#designs)
+  - [Installations](#installations)
+  - [Usage](#usage)
 
 ## Project Status
   - Development.
