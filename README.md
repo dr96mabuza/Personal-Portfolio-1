@@ -1,5 +1,12 @@
 # Personal Portfolio
 
+## Docs
+  - [Project Status](## Project Status)
+  - [Description](## Description)
+  - [Designs](### Designs)
+  - [Installations](## Installations)
+  - [Usage](## Usage)
+
 ## Project Status
   - Development.
 
@@ -9,6 +16,7 @@ I have created a personal portfolio webpage to exhibit six of my accomplished pr
 - Curriculum - https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,webpack)](https://skillicons.dev)
+
 ### Designs
 - Desktop - https://cdn.statically.io/gh/TheOdinProject/curriculum/1c8b5c739efd263e8cc48703988b18d6e3afe034/advanced_html_css/responsive-design/project_personal_portfolio/imgs/portfolio.png
 
