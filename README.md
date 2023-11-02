@@ -8,7 +8,7 @@
   - [Usage](#usage)
 
 ## Project Status
-  - Development.
+  - In progress.
 
 ## Description
 I have created a personal portfolio webpage to exhibit six of my accomplished projects, each demonstrating the skills I have acquired during my learning journey. The portfolio was constructed using HTML, CSS, Vanilla JS, and Webpack for bundling, adhering strictly to the prescribed designs for mobile, tablet, and desktop without any external frameworks or libraries. This project is a part of the Odin Project curriculum, showcasing my ability to implement the learned concepts in a practical setting.
@@ -25,6 +25,12 @@ I have created a personal portfolio webpage to exhibit six of my accomplished pr
 - Mobile - https://cdn.statically.io/gh/TheOdinProject/curriculum/1c8b5c739efd263e8cc48703988b18d6e3afe034/advanced_html_css/responsive-design/project_personal_portfolio/imgs/portfolio%20mobile.png
 
 ## Installations
+
+- Requirements
+  - Node.JS
+  - NPM
+  - NVM
+
 ```bash
 npm install
 ```
