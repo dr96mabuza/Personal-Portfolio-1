@@ -180,14 +180,15 @@ section {
 
 #informationContainer > h2 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-self: center;
 }
 
 #informationContainer {
-  gap: 10px;
-  max-width: 45vw;
-  padding: 30px;
+  /* gap: 10px; */
+  max-width: 30vw;
+  padding-top: 3vw;
+  padding-left: 5vw;
 }
 
 .footerIcons {
@@ -224,6 +225,6 @@ section {
 #footer > img {
   margin: 5vw;
   margin-top: 3vw;
-  max-width: 40vw;
+  max-width: 55vw;
   height: auto;
 }
