@@ -33,10 +33,10 @@ const myImage5 = new Image();
 myImage5.src = require("./images/greg-rosenke-xoxnfVIE7Qw-unsplash.jpg");
 
 const heroImage = new Image();
-heroImage.src = require("./images/204Sifiso Mabuza simabuz022.jpg");
+heroImage.src = require("./images/204Sifiso Mabuza simabuz022.svg");
 
-const myImage7 = new Image();
-myImage7.src = require("./images/dan-cristian-padure-noOXRT9gfQ8-unsplash.jpg");
+const footerImage = new Image();
+footerImage.src = require("./images/438Sifiso Mabuza simabuz022.svg");
 
 const phoneIcon = new Image();
 phoneIcon.setAttribute("class", "contactIcon");
@@ -53,6 +53,6 @@ project3.appendChild(myImage2);
 project4.appendChild(myImage3);
 project5.appendChild(myImage4);
 project6.appendChild(myImage5);
-footer.appendChild(myImage7);
+footer.appendChild(footerImage);
 email.appendChild(emailIcon);
 phone.appendChild(phoneIcon);
