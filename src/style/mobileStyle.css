@@ -14,6 +14,10 @@
     grid-template-columns: 1fr;
   }
 
+  #about {
+    height: 100%;
+  }
+
   #about > img {
     height: 92vw;
     width: 92vw;

@@ -95,11 +95,10 @@ nav > ul > li:hover {
 #about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* height: 300px; */
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* height: 65vh; */
+    height: 70vh;
 }
 
 #about > img {
@@ -111,12 +110,14 @@ nav > ul > li:hover {
 }
 
 #about > div > h1 {
-    font-size: 10vw;
+    /* font-size: 10vw; */
+    font-size: clamp(100px, 10vw, 12vw);
 }
 
 #about > div p:nth-child(2){
     font-weight: bold;
     font-size: 3vw;
+    font-size: clamp(18px, 2vw, 8vw);
 }
 
 #about > div > div {
