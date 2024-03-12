@@ -28,3 +28,40 @@ document.querySelector("img[alt='linkedin']").src = linkedinSrc;
 
 /* footer github icon */
 document.querySelector("img[alt='github']").src = githubSrc;
+
+/**
+ * hide all content sections
+ */
+const displayNoneAll = () => {
+  document
+    .querySelectorAll("#about, #resume, #contact, #projects")
+    .forEach((item) => {
+      // eslint-disable-next-line no-param-reassign
+      item.style.display = "none";
+    });
+};
+
+/**
+ * Displays the selected content section only.
+ * @param {HTMLElement} button
+ */
+const displaySelectedSection = (button) => {
+  if (["resume", "contact"].toString().includes(button.textContent.toLowerCase())) {
+    document.querySelector(`#${button.textContent.toLowerCase()}`).style.display = "flex";
+  } else if (button.textContent.toLowerCase() === "projects") {
+    document.querySelector(`#${button.textContent.toLowerCase()}`).style.display = "grid";
+  } else {
+    document.querySelector("#about").style.display = "grid";
+  }
+  
+};
+
+/* nav buttons */
+document
+  .querySelectorAll("#about button, nav > ul > li, #header p:nth-child(2)")
+  .forEach((button) => {
+    button.addEventListener("click", () => {
+      displayNoneAll();
+      displaySelectedSection(button);
+    });
+  });

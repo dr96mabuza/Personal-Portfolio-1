@@ -12,7 +12,7 @@ body {
 }
 
 input, textarea {
-    padding: 1wv;
+    padding: 1vw;
     background-color: whitesmoke;
     border: solid black 1px;
 }
@@ -38,6 +38,7 @@ nav > ul {
 
 section ,footer {
     padding: 3vw;
+    padding-top: 2vw;
     /* padding-right: 2vw; */
     /* width: 100%; */
 }
@@ -45,7 +46,9 @@ section ,footer {
 section > h2 {
     font-size: 6vw;
     font-weight: bolder;
+    margin-bottom: 2vw;
 }
+
 
 /* header styling */
 
@@ -96,12 +99,12 @@ nav > ul > li:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* height: 70vh; */
+    /* height: 65vh; */
 }
 
 #about > img {
-    height: calc(50vw - 30px - 6vw);
-    width: calc(50vw - 30px - 6vw);
+    height: calc(50vw - 30px - 3vw);
+    width: calc(50vw - 30px - 3vw);
     border-radius: 50vw;
     justify-self: center;
     object-fit: cover;
@@ -153,7 +156,7 @@ form button:hover {
 .project {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 15vh;
+    margin-top: 5vh;
     gap: 5vw;
 }
 
@@ -180,6 +183,7 @@ form button:hover {
 
 #resume > div > h3 {
     font-size: xx-large;
+    font-weight: bold;
 }
 
 .separation {
@@ -218,6 +222,7 @@ form button:hover {
 #contact {
     display: flex;
     flex-direction: column;
+    height: 70vh;
 }
 
 #contact > div {
@@ -302,4 +307,8 @@ footer > div:last-child > p {
 footer > div:last-child > p:last-child,
 footer > div:last-child > p:last-child > a {
     font-size: x-small;
+}
+
+#resume, #projects, #contact {
+    display: none;
 }
