@@ -3,17 +3,26 @@
     padding: 0%;
     font-size: 16px;
     font-family: work-sans;
+    margin-left: 0%;
 }
 
-html {
-    width: 100%;
+body {
+    /* width: 100%; */
     background-color: whitesmoke;
 }
 
 input, textarea {
-    padding: 10px;
+    padding: 1wv;
     background-color: whitesmoke;
     border: solid black 1px;
+}
+
+input {
+    width: calc((50vw / 2));
+}
+
+textarea {
+    width: calc(50vw * 0.66);
 }
 
 ul {
@@ -28,8 +37,9 @@ nav > ul {
 }
 
 section ,footer {
-    padding: 30px;
-    padding-right: 50px;
+    padding: 3vw;
+    /* padding-right: 2vw; */
+    /* width: 100%; */
 }
 
 section > h2 {
@@ -45,7 +55,7 @@ section > h2 {
 }
 
 #header > div {
-    gap: 10px;
+    gap: 1vw;
     justify-content: center;
     align-items: center; 
 }
@@ -86,13 +96,13 @@ nav > ul > li:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    height: 100vh;
+    /* height: 70vh; */
 }
 
 #about > img {
-    height: 430px;
-    width: 430px;
-    border-radius: 50%;
+    height: calc(50vw - 30px - 6vw);
+    width: calc(50vw - 30px - 6vw);
+    border-radius: 50vw;
     justify-self: center;
     object-fit: cover;
 }
@@ -126,9 +136,9 @@ nav > ul > li:hover {
 }
 
 button {
-    border-radius: 75px;
-    height: 130px;
-    width: 130px;
+    border-radius: 50%;
+    height: calc((50vw / 3) - 3vw);
+    width: calc((50vw / 3) - 3vw);
     border: solid black 1px;
     font-size: x-large;
     cursor: pointer;
@@ -153,7 +163,7 @@ form button:hover {
 
 .project > img {
     height: 30vw;
-    width: 500px;
+    width: calc(50vw - 3vw - 5vw);
     object-fit: cover;
 }
 
@@ -191,6 +201,7 @@ form button:hover {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 3vw;
+    gap: 2vw;
 }
 
 .position {
@@ -212,6 +223,7 @@ form button:hover {
 #contact > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2vw;
 }
 
 #contact > div > div > div {
@@ -260,8 +272,8 @@ footer {
     margin-top: 50px;
     gap: 20px;
     border-top: solid black 1px;
-    margin-left: 30px;
-    margin-right: 50px;
+    margin-left: 3vw;
+    margin-right: 3vw;
     padding-top: 30px;
 }
 
