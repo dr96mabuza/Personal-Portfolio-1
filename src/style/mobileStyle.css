@@ -1,0 +1,84 @@
+@media (max-width: 425px) {
+  #header > div {
+    gap: 2.5vw;
+  }
+
+  footer, 
+  #about,
+  .project,
+  #contact > div, 
+  form div:first-child, 
+  #resume > div, 
+  .resumeItem,
+  #skills > ul  {
+    grid-template-columns: 1fr;
+  }
+
+  #about > img {
+    height: 92vw;
+    width: 92vw;
+    grid-row-start: 2;
+  }
+
+  #about > div > div {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  button {
+      height: calc((100vw / 3) - 6vw);
+      width: calc((100vw / 3) - 6vw);
+  }
+
+  .project > img {
+    height: 50vw;
+    width: 94vw;
+  }
+
+  #contact {
+    height: fit-content;
+  }
+
+  input {
+    width: 90vw;
+  }
+
+  textarea {
+    width: 90vw;
+  }
+
+  #message {
+    flex-direction: column;
+  }
+
+  form {
+    margin-top: 5vh;
+  }
+
+  nav {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .description {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  #skills > ul > li {
+    grid-column-start: 1;
+  }
+
+  #skills > ul {
+    margin: 10vw;
+  }
+
+  .resumeItem {
+    margin-bottom: 10vh;
+  }
+
+  section ,footer {
+    /* padding: 6vw; */
+  }
+}

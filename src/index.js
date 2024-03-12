@@ -1,7 +1,7 @@
 import "./style/meyer.css";
 import "./style/style.css";
 // import "./style/tabletStyle.css";
-// import "./style/mobileStyle.css";
+import "./style/mobileStyle.css";
 
 const profileSrc = require("./asserts/images/204Sifiso Mabuza simabuz022.jpg");
 const project2Src = require("./asserts/images/pankaj-patel-_SgRNwAVNKw-unsplash (1).jpg");
@@ -46,14 +46,23 @@ const displayNoneAll = () => {
  * @param {HTMLElement} button
  */
 const displaySelectedSection = (button) => {
-  if (["resume", "contact"].toString().includes(button.textContent.toLowerCase())) {
-    document.querySelector(`#${button.textContent.toLowerCase()}`).style.display = "flex";
+  if (
+    ["resume", "contact"]
+      .toString()
+      .includes(button.textContent.toLowerCase())
+  ) {
+    document
+      .querySelector(`#${button.textContent.toLowerCase()}`)
+      .style.display = "flex";
   } else if (button.textContent.toLowerCase() === "projects") {
-    document.querySelector(`#${button.textContent.toLowerCase()}`).style.display = "grid";
+    document
+      .querySelector(`#${button.textContent.toLowerCase()}`)
+      .style.display = "grid";
   } else {
-    document.querySelector("#about").style.display = "grid";
+    document
+      .querySelector("#about")
+      .style.display = "grid";
   }
-  
 };
 
 /* nav buttons */

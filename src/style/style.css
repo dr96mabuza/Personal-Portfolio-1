@@ -162,6 +162,7 @@ form button:hover {
 
 .project > div > h2 {
     margin-bottom: 20px;
+    font-weight: bolder;
 }
 
 .project > img {
