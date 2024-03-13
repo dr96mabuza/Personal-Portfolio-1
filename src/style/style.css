@@ -9,6 +9,7 @@
 body {
     /* width: 100%; */
     background-color: whitesmoke;
+    position: relative;
 }
 
 input, textarea {
@@ -49,12 +50,21 @@ section > h2 {
     margin-bottom: 2vw;
 }
 
+#about, #resume, #projects, #contact {
+    margin-top: 15vh;
+}
+
 
 /* header styling */
 
 #header {
     justify-content: space-between;
     align-self: center;
+    position:fixed;
+    top: 0%;
+    width: 94%;
+    z-index: 1;
+    background-color: whitesmoke;
 }
 
 #header > div {
@@ -73,6 +83,7 @@ section > h2 {
 #header p:nth-child(2) {
     font-weight: bold;
     font-size: 19px;
+    cursor: pointer;
 }
 
 nav > ul :nth-child(2) {

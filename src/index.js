@@ -65,6 +65,14 @@ const displaySelectedSection = (button) => {
   }
 };
 
+/**
+ * Insures that the section is viewed from the top, always.
+ * @param {HTMLElement} button
+ */
+const backToTop = () => {
+  document.documentElement.scrollTop = 0;
+};
+
 /* nav buttons */
 document
   .querySelectorAll("#about button, nav > ul > li, #header p:nth-child(2)")
@@ -72,5 +80,6 @@ document
     button.addEventListener("click", () => {
       displayNoneAll();
       displaySelectedSection(button);
+      backToTop();
     });
   });
