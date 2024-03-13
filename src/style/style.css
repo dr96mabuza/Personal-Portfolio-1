@@ -105,6 +105,14 @@ nav > ul > li:hover {
     color: brown;
 }
 
+#header > img {
+    width: 30px;
+    height: 30px;
+    border: solid black 1px;
+    display: none;
+    margin-left: 50px;
+}
+
 /*About section styling*/
 
 #about {

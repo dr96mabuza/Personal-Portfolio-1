@@ -83,3 +83,7 @@ document
       backToTop();
     });
   });
+
+document.querySelector("#header > img").addEventListener("click", () => {
+  document.querySelector("nav").style.width = "100vw";
+});
