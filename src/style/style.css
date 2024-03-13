@@ -338,3 +338,50 @@ footer > div:last-child > p:last-child > a {
 #resume, #projects, #contact {
     display: none;
 }
+
+menu {
+    width: 100vw;
+    overflow: hidden;
+    height: 0; 
+    position: fixed; 
+    /* background-color: black; */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+menu > div {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+menu > div > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    gap: 5vh;
+    width: 100%;
+}
+
+menu > div > ul > li {
+    padding: 10px;
+    /* margin-left: 50px; */
+}
+
+menu > div > img {
+    width: 5vh;
+    height: 5vh;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 7vw;
+}

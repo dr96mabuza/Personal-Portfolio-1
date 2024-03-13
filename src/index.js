@@ -85,5 +85,6 @@ document
   });
 
 document.querySelector("#header > img").addEventListener("click", () => {
-  document.querySelector("nav").style.width = "100vw";
+  document.querySelector("menu").style.transition = "height 1s ease-in-out";
+  document.querySelector("menu").style.height = "100vh";
 });
