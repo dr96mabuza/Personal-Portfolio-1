@@ -98,7 +98,7 @@ nav > ul > li:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 #about > img {
@@ -224,7 +224,8 @@ form button:hover {
 #contact {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    /* height: 70vh; */
+    margin-bottom: 10vh;
 }
 
 #contact > div {
