@@ -1,58 +1,118 @@
 import "./style/meyer.css";
 import "./style/style.css";
-import "./style/tabletStyle.css";
+// import "./style/tabletStyle.css";
 import "./style/mobileStyle.css";
 
-const project1 = document.querySelector("#project1");
-const project2 = document.querySelector("#project2");
-const project3 = document.querySelector("#project3");
-const project4 = document.querySelector("#project4");
-const project5 = document.querySelector("#project5");
-const project6 = document.querySelector("#project6");
-const headerImageContainer = document.querySelector("#headerImageContainer");
-const footer = document.querySelector("#footer");
-const email = document.querySelector("#email");
-const phone = document.querySelector("#phone");
+const profileSrc = require("./asserts/images/204Sifiso Mabuza simabuz022.jpg");
+const project2Src = require("./asserts/images/pankaj-patel-_SgRNwAVNKw-unsplash (1).jpg");
+const project1Src = require("./asserts/images/Screenshot from 2024-03-11 12-41-12.png");
+const project3Src = require("./asserts/images/Screenshot from 2024-03-11 13-02-41.png");
+const linkedinSrc = require("./asserts/icons/iconmonstr-linkedin-1.svg");
+const githubSrc = require("./asserts/icons/iconmonstr-github-5.svg");
+const closeWindowIcon = require("./asserts/icons/window-close.svg");
+const openMenuIcon = require("./asserts/icons/dots-vertical.svg");
 
-const myImage = new Image();
-myImage.src = require("./images/pexels-pixabay-210881.jpg");
+/* first project img */
+document.querySelector("img[alt='project1']").src = project1Src;
 
-const myImage1 = new Image();
-myImage1.src = require("./images/julie-molliver-Z3vFp7szCAY-unsplash.jpg");
+/* second project img */
+document.querySelector("img[alt='project2']").src = project2Src;
 
-const myImage2 = new Image();
-myImage2.src = require("./images/ivan-kazlouskij-AWYePc-i7mo-unsplash.jpg");
+/* third project img */
+document.querySelector("img[alt='project3']").src = project3Src;
 
-const myImage3 = new Image();
-myImage3.src = require("./images/hunter-haley-s8OO2-t-HmQ-unsplash.jpg");
+/* header image and hero image */
+document.querySelector("#header > div > img").src = profileSrc;
+document.querySelector("img[alt='profile']").src = profileSrc;
 
-const myImage4 = new Image();
-myImage4.src = require("./images/haupes-I7iJOE4fsYo-unsplash.jpg");
+/* footer linkedin icon */
+document.querySelector("img[alt='linkedin']").src = linkedinSrc;
 
-const myImage5 = new Image();
-myImage5.src = require("./images/greg-rosenke-xoxnfVIE7Qw-unsplash.jpg");
+/* footer github icon */
+document.querySelector("img[alt='github']").src = githubSrc;
 
-const heroImage = new Image();
-heroImage.src = require("./images/204Sifiso Mabuza simabuz022.svg");
+const menuElement = document.querySelector("menu");
 
-const footerImage = new Image();
-footerImage.src = require("./images/438Sifiso Mabuza simabuz022.svg");
+/**
+ * close menu window.
+ */
+const closeMenu = () => {
+  menuElement.style.transition = "height 1s ease-in-out";
+  menuElement.style.height = "0vh";
+};
 
-const phoneIcon = new Image();
-phoneIcon.setAttribute("class", "contactIcon");
-phoneIcon.src = require("./icons/phone-outline.svg");
+/* close menu window icon */
+const closeIcon = document.querySelector("menu > div > img");
+closeIcon.src = closeWindowIcon;
+closeIcon.addEventListener("click", () => {
+  closeMenu();
+});
 
-const emailIcon = new Image();
-emailIcon.setAttribute("class", "contactIcon");
-emailIcon.src = require("./icons/email-outline.svg");
+/* open menu icon */
+const menuIcon = document.querySelector("#header > img");
+menuIcon.src = openMenuIcon;
+menuIcon.addEventListener("click", () => {
+  menuElement.style.transition = "height 1s ease-in-out";
+  menuElement.style.height = "100vh";
+});
 
-headerImageContainer.appendChild(heroImage);
-project1.appendChild(myImage);
-project2.appendChild(myImage1);
-project3.appendChild(myImage2);
-project4.appendChild(myImage3);
-project5.appendChild(myImage4);
-project6.appendChild(myImage5);
-footer.appendChild(footerImage);
-email.appendChild(emailIcon);
-phone.appendChild(phoneIcon);
+document
+  .querySelectorAll("menu > div > ul > li")
+  .forEach((element) => {
+    element.addEventListener("click", () => { closeMenu(); });
+  });
+
+/**
+ * hide all content sections
+ */
+const displayNoneAll = () => {
+  document
+    .querySelectorAll("#about, #resume, #contact, #projects")
+    .forEach((item) => {
+      // eslint-disable-next-line no-param-reassign
+      item.style.display = "none";
+    });
+};
+
+/**
+ * Displays the selected content section only.
+ * @param {HTMLElement} button
+ */
+const displaySelectedSection = (button) => {
+  if (
+    ["resume", "contact"]
+      .toString()
+      .includes(button.textContent.toLowerCase())
+  ) {
+    document
+      .querySelector(`#${button.textContent.toLowerCase()}`)
+      .style.display = "flex";
+  } else if (button.textContent.toLowerCase() === "projects") {
+    document
+      .querySelector(`#${button.textContent.toLowerCase()}`)
+      .style.display = "grid";
+  } else {
+    document
+      .querySelector("#about")
+      .style.display = "grid";
+  }
+};
+
+/**
+ * Insures that the section is viewed from the top, always.
+ * @param {HTMLElement} button
+ */
+const backToTop = () => {
+  document.documentElement.scrollTop = 0;
+};
+
+/* nav buttons */
+document
+  .querySelectorAll("#about button, nav > ul > li, #header p:nth-child(2), menu > div > ul > li")
+  .forEach((button) => {
+    button.addEventListener("click", () => {
+      displayNoneAll();
+      displaySelectedSection(button);
+      backToTop();
+    });
+  });
