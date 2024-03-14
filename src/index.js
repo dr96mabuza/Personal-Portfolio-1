@@ -9,6 +9,8 @@ const project1Src = require("./asserts/images/Screenshot from 2024-03-11 12-41-1
 const project3Src = require("./asserts/images/Screenshot from 2024-03-11 13-02-41.png");
 const linkedinSrc = require("./asserts/icons/iconmonstr-linkedin-1.svg");
 const githubSrc = require("./asserts/icons/iconmonstr-github-5.svg");
+const closeWindowIcon = require("./asserts/icons/window-close.svg");
+const openMenuIcon = require("./asserts/icons/dots-vertical.svg");
 
 /* first project img */
 document.querySelector("img[alt='project1']").src = project1Src;
@@ -28,6 +30,37 @@ document.querySelector("img[alt='linkedin']").src = linkedinSrc;
 
 /* footer github icon */
 document.querySelector("img[alt='github']").src = githubSrc;
+
+const menuElement = document.querySelector("menu");
+
+/**
+ * close menu window.
+ */
+const closeMenu = () => {
+  menuElement.style.transition = "height 1s ease-in-out";
+  menuElement.style.height = "0vh";
+};
+
+/* close menu window icon */
+const closeIcon = document.querySelector("menu > div > img");
+closeIcon.src = closeWindowIcon;
+closeIcon.addEventListener("click", () => {
+  closeMenu();
+});
+
+/* open menu icon */
+const menuIcon = document.querySelector("#header > img");
+menuIcon.src = openMenuIcon;
+menuIcon.addEventListener("click", () => {
+  menuElement.style.transition = "height 1s ease-in-out";
+  menuElement.style.height = "100vh";
+});
+
+document
+  .querySelectorAll("menu > div > ul > li")
+  .forEach((element) => {
+    element.addEventListener("click", () => { closeMenu(); });
+  });
 
 /**
  * hide all content sections
@@ -75,7 +108,7 @@ const backToTop = () => {
 
 /* nav buttons */
 document
-  .querySelectorAll("#about button, nav > ul > li, #header p:nth-child(2)")
+  .querySelectorAll("#about button, nav > ul > li, #header p:nth-child(2), menu > div > ul > li")
   .forEach((button) => {
     button.addEventListener("click", () => {
       displayNoneAll();
@@ -83,8 +116,3 @@ document
       backToTop();
     });
   });
-
-document.querySelector("#header > img").addEventListener("click", () => {
-  document.querySelector("menu").style.transition = "height 1s ease-in-out";
-  document.querySelector("menu").style.height = "100vh";
-});

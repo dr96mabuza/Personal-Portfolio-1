@@ -108,7 +108,7 @@ nav > ul > li:hover {
 #header > img {
     width: 30px;
     height: 30px;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     display: none;
     margin-left: 50px;
 }
@@ -378,7 +378,7 @@ menu > div > ul > li {
 menu > div > img {
     width: 5vh;
     height: 5vh;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     display: flex;
     flex-direction: row;
     justify-self: flex-end;
