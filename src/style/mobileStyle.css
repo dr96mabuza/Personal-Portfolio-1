@@ -15,7 +15,7 @@
   }
 
   #about, #resume, #projects, #contact {
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
 
   #about {
@@ -71,6 +71,7 @@
 
   #header > img {
     display: block;
+    margin-left: 40vw;
   }
 
   .description {
@@ -90,4 +91,22 @@
     margin-bottom: 10vh;
   }
 
+  #header p:nth-child(3) {
+    width: 0;
+    overflow: hidden;
+  }
+
+  #header > div > img {
+    height: 3vh;
+    width: 3vh;
+  }
+
+  #header p:nth-child(2) {
+    font-size:medium;
+  }
+
+  menu > div > ul > li:hover,
+  menu > div > img:hover {
+    cursor: pointer;
+  }
 }
