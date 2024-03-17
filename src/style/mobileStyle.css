@@ -95,4 +95,18 @@
     width: 0;
     overflow: hidden;
   }
+
+  #header > div > img {
+    height: 3vh;
+    width: 3vh;
+  }
+
+  #header p:nth-child(2) {
+    font-size:medium;
+  }
+
+  menu > div > ul > li:hover,
+  menu > div > img:hover {
+    cursor: pointer;
+  }
 }
