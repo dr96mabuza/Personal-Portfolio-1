@@ -2,7 +2,7 @@
 
 ## Description
 I have created a personal portfolio webpage to exhibit  my accomplished projects, each demonstrating the skills I have acquired during my learning journey. The portfolio was constructed using HTML, CSS, Javascript, and Webpack for bundling. Without any external frameworks or libraries.
-![home page](./src/asserts/images/Screenshot from 2024-03-19 22-00-14.png)
+![homepage](/src/asserts/images/Screenshot_from_2024-03-19_22-00-14.png)
 
 ## Docs
   - [Project Status](#project-status)
