@@ -1,41 +1,32 @@
-# Personal Portfolio
+# PERSONAL WEBSITE
+
+## Description
+I have created a personal portfolio webpage to exhibit  my accomplished projects, each demonstrating the skills I have acquired during my learning journey. The portfolio was constructed using HTML, CSS, Javascript, and Webpack for bundling. Without any external frameworks or libraries.
+
+
+file:///home/sifiso/Pictures/Screenshots/Screenshot%20from%202024-03-19%2022-00-14.png
+-21:-41:85:65
 
 ## Docs
   - [Project Status](#project-status)
-  - [Description](#description)
-  - [Designs](#designs)
-  - [Installations](#installations)
   - [Usage](#usage)
+  - [For Development](#for-development)
 
 ## Project Status
-  - In progress.
-
-## Description
-I have created a personal portfolio webpage to exhibit six of my accomplished projects, each demonstrating the skills I have acquired during my learning journey. The portfolio was constructed using HTML, CSS, Vanilla JS, and Webpack for bundling, adhering strictly to the prescribed designs for mobile, tablet, and desktop without any external frameworks or libraries. This project is a part of the Odin Project curriculum, showcasing my ability to implement the learned concepts in a practical setting.
-
-- Curriculum - https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio
+  - In progress. 
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,webpack)](https://skillicons.dev)
 
-### Designs
-- Desktop - https://cdn.statically.io/gh/TheOdinProject/curriculum/1c8b5c739efd263e8cc48703988b18d6e3afe034/advanced_html_css/responsive-design/project_personal_portfolio/imgs/portfolio.png
-
-- Tablet - https://cdn.statically.io/gh/TheOdinProject/curriculum/1c8b5c739efd263e8cc48703988b18d6e3afe034/advanced_html_css/responsive-design/project_personal_portfolio/imgs/portfolio%20tablet.png
-
-- Mobile - https://cdn.statically.io/gh/TheOdinProject/curriculum/1c8b5c739efd263e8cc48703988b18d6e3afe034/advanced_html_css/responsive-design/project_personal_portfolio/imgs/portfolio%20mobile.png
-
-## Installations
-
-- Requirements
-  - Node.JS
-  - NPM
-  - NVM
-
+## For Development
+- To run any of the commands below you will need to have the lastest versions on ***Node.js*** and ***npm*** installed on your system.
+- run npm install to download all the project dependencies.
 ```bash
 npm install
 ```
-
-## Usage
+- run webpack to open a server locally. server restarts after changes are made to the project.
 ```bash
 npx webpack --watch
 ```
+
+## Issues
+- Image sizes are currently large (> 900kb), even after optimization.
