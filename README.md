@@ -8,6 +8,8 @@ I have created a personal portfolio webpage to exhibit  my accomplished projects
   - [Project Status](#project-status)
   - [Usage](#usage)
   - [For Development](#for-development)
+  - [Issues](#issues)
+  - [Technologies](#technologies)
 
 ## Project Status
   - In progress. 
@@ -27,3 +29,6 @@ npx webpack --watch
 
 ## Issues
 - Image sizes are currently large (> 900kb), even after optimization.
+
+## Technologies
+- Webpack, Eslint, Babel, Css, Javascript and HTML.
