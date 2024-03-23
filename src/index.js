@@ -3,6 +3,8 @@ import "./style/style.css";
 // import "./style/tabletStyle.css";
 import "./style/mobileStyle.css";
 
+import emailCourier from "./notifications/courier";
+
 const profileSrc = require("./asserts/images/204Sifiso Mabuza simabuz022.jpg");
 const project2Src = require("./asserts/images/pankaj-patel-_SgRNwAVNKw-unsplash (1).jpg");
 const project1Src = require("./asserts/images/Screenshot from 2024-03-11 12-41-12.png");
