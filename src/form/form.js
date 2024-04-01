@@ -12,7 +12,7 @@ const getFormData = () => {
 
 const handleForm = (event) => {
   event.preventDefault();
-  return getFormData(event);
+  return getFormData();
 };
 
 export default handleForm;
