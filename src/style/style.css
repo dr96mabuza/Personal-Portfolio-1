@@ -7,7 +7,6 @@
 }
 
 body {
-    /* width: 100%; */
     background-color: whitesmoke;
     position: relative;
 }
@@ -40,8 +39,6 @@ nav > ul {
 section ,footer {
     padding: 3vw;
     padding-top: 2vw;
-    /* padding-right: 2vw; */
-    /* width: 100%; */
 }
 
 section > h2 {
@@ -108,7 +105,6 @@ nav > ul > li:hover {
 #header > img {
     width: 30px;
     height: 30px;
-    /* border: solid black 1px; */
     display: none;
     margin-left: 50px;
 }
@@ -121,7 +117,6 @@ nav > ul > li:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* height: 70vh; */
 }
 
 #about > img {
@@ -246,7 +241,6 @@ form button:hover {
 #contact {
     display: flex;
     flex-direction: column;
-    /* height: 70vh; */
     margin-bottom: 10vh;
 }
 
@@ -298,7 +292,6 @@ form button {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* margin-bottom: 100px; */
     margin-top: 50px;
     gap: 20px;
     border-top: solid black 1px;
@@ -343,7 +336,6 @@ menu {
     overflow: hidden;
     height: 0; 
     position: fixed; 
-    /* background-color: black; */
     z-index: 1;
     top: 0;
     left: 0;
@@ -371,13 +363,11 @@ menu > div > ul {
 
 menu > div > ul > li {
     padding: 10px;
-    /* margin-left: 50px; */
 }
 
 menu > div > img {
     width: 5vh;
     height: 5vh;
-    /* border: solid black 1px; */
     display: flex;
     flex-direction: row;
     justify-self: flex-end;
@@ -385,4 +375,11 @@ menu > div > img {
     margin-right: 7vw;
 }
 
+/* input[type="text"]:invalid {
+    border: solid red 2px;
+} */
+
+input[type="text"]:valid {
+    border: solid green 2px;
+}
 
