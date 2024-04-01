@@ -2,9 +2,12 @@ import "./style/meyer.css";
 import "./style/style.css";
 // import "./style/tabletStyle.css";
 import "./style/mobileStyle.css";
+// import emailCourier from "./notifications/courier";
+import handleForm from "./form/form";
+import showInvalidFields from "./form/validation"
+import validateForm from "./form/validation";
 
-import emailCourier from "./notifications/courier";
-import { handleForm } from "./form/form";
+require("./form/validation");
 
 const profileSrc = require("./asserts/images/204Sifiso Mabuza simabuz022.jpg");
 const project2Src = require("./asserts/images/pankaj-patel-_SgRNwAVNKw-unsplash (1).jpg");
@@ -121,6 +124,7 @@ document
   });
 
 document.querySelector("#submit").addEventListener("click", async (e) => {
-  const emailResult = await emailCourier().sendEmail(handleForm(e));
-  console.log(emailResult);
+  if (validateForm()) {
+    console.log(handleForm(e));
+  }
 });
