@@ -4,7 +4,6 @@ import "./style/style.css";
 import "./style/mobileStyle.css";
 // import emailCourier from "./notifications/courier";
 import handleForm from "./form/form";
-import showInvalidFields from "./form/validation"
 import validateForm from "./form/validation";
 
 require("./form/validation");
