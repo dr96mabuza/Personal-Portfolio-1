@@ -6,29 +6,19 @@
     margin-left: 0%;
 }
 
-/* p {
-    gap: 5px;
-} */
-
 body {
-    /* width: 100%; */
     background-color: whitesmoke;
     position: relative;
 }
 
 input, textarea {
-    padding: 1vw;
+    padding: 8px 12px;
     background-color: whitesmoke;
     border: solid black 1px;
 }
 
 label {
-    /* width: 100%; */
     margin-top: 20px;
-}
-
-textarea {
-    /* width: 100%; */
 }
 
 ul {
@@ -44,23 +34,17 @@ nav > ul {
 
 section ,footer {
     padding: 1.75vw;
-    /* padding-top: 2vw; */
-    /* padding-right: 2vw; */
-    /* width: 100%; */
 }
 
 section > h2 {
-    font-size: 6vw;
+    font-size: 2.6vw;
     font-weight: bolder;
     margin-bottom: 2vw;
 }
 
 #about, #resume, #projects, #contact {
-    margin-top: 15vh;
+    margin-top: 12vh;
 }
-
-
-/* header styling */
 
 #header {
     justify-content: space-between;
@@ -126,8 +110,6 @@ nav > ul > li:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* max-width: 70vw; */
-    /* height: 70vh; */
 }
 
 #about > img {
@@ -139,7 +121,6 @@ nav > ul > li:hover {
 }
 
 #about > div > h1 {
-    /* font-size: 10vw; */
     font-size: clamp(100px, 10vw, 12vw);
     padding-bottom: 20px;
 }
@@ -189,6 +170,13 @@ form button:hover {
 }
 
 /*projects styling*/
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 1300px; */
+}
+
 .project {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -196,31 +184,43 @@ form button:hover {
     gap: 5vw;
 }
 
+.project > div {
+    width: 430px ;
+}
+
 .project > div > h2 {
+    font-size: medium;
     margin-bottom: 20px;
     font-weight: bolder;
 }
 
 .project > img {
-    height: 30vw;
-    width: calc(50vw - 3vw - 5vw);
+    height: 311px;
+    width: 491px;
     object-fit: cover;
 }
 
 #resume {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
 }
+
+/* #resume > h2 {
+    align-self: flex-start;
+} */
 
 #resume > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 600px 600px;
 }
 
 #resume > div > h3 {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
+    /* margin: 30px auto; */
 }
 
 .separation {
@@ -242,7 +242,7 @@ form button:hover {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 3vw;
-    gap: 2vw;
+    gap: 10px;
 }
 
 .position {
@@ -273,15 +273,6 @@ h2 {
     font-weight: bolder;
     margin-bottom: 8px;
 }
-
-/* #contact > div > div {
-    margin-top: 30px;
-}
-
-#contact > div > h2, 
-#contact > div > p {
-    margin-top: 15px;
-} */
 
 #contact > div {
     display: flex;
@@ -317,24 +308,16 @@ form div:first-child > div, form div:nth-child(2) > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     margin-right: 0;
-    /* gap: 20px; */
-    /* margin-top: 20px; */
 }
 
 form button {
     background-color: orange;
     width: 100%;
     border-radius: 20px;
-    /* padding: 0%; */
     height: 40px;
     margin-top: 20px;
 
-}
-
-form {
-    /* width:460px */
 }
 
 /*footer styling*/
@@ -343,7 +326,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items:stretch;
-    /* margin-bottom: 100px; */
     margin-top: 50px;
     gap: 20px;
     border-top: solid black 1px;
@@ -388,7 +370,6 @@ menu {
     overflow: hidden;
     height: 0; 
     position: fixed; 
-    /* background-color: black; */
     z-index: 1;
     top: 0;
     left: 0;
@@ -416,13 +397,11 @@ menu > div > ul {
 
 menu > div > ul > li {
     padding: 10px;
-    /* margin-left: 50px; */
 }
 
 menu > div > img {
     width: 5vh;
     height: 5vh;
-    /* border: solid black 1px; */
     display: flex;
     flex-direction: row;
     justify-self: flex-end;
