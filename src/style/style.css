@@ -7,11 +7,9 @@
 }
 
 body {
-    /* width: 100%; */
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    /* position: relative; */
     height: 100vh;
 }
 
@@ -41,10 +39,8 @@ nav > ul {
 }
 
 section ,footer, header {
-    padding: 3vw;
+    padding: 2vw;
     padding-top: 2vw;
-    /* padding-right: 2vw; */
-    /* width: 100%; */
 }
 
 section > h2 {
@@ -53,20 +49,12 @@ section > h2 {
     margin-bottom: 2vw;
 }
 
-#about, #resume, #projects, #contact {
-    /* margin-top: 15vh; */
-}
-
 
 /* header styling */
-
 #header {
     justify-content: space-between;
     align-self: center;
-    /* position:fixed; */
-    /* top: 0%; */
     width: 94%;
-    /* z-index: 1; */
     background-color: whitesmoke;
 }
 
@@ -77,15 +65,15 @@ section > h2 {
 }
 
 #header > div > img {
-    height: 5vh;
-    width: 5vh;
+    height: 22px;
+    width: 22px;
     border-radius: 20px;
     object-fit: cover;
 }
 
 #header p:nth-child(2) {
     font-weight: bold;
-    font-size: 19px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -93,6 +81,12 @@ section > h2 {
     color: brown;
 }
 
+nav > ul {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 nav > ul :nth-child(2) {
     border-left: solid black 1px;
     border-right: solid black 1px;
@@ -102,6 +96,7 @@ nav > ul > li {
     padding: 10px;
     cursor: pointer;
     font-weight: lighter;
+    
 }
 
 nav > ul > li:hover {
@@ -111,7 +106,6 @@ nav > ul > li:hover {
 #header > img {
     width: 30px;
     height: 30px;
-    /* border: solid black 1px; */
     display: none;
     margin-left: 50px;
 }
@@ -125,7 +119,6 @@ nav > ul > li:hover {
     align-items: center;
     gap: 30px;
     height: 100%;
-    /* height: 70vh; */
 }
 
 #about > img {
@@ -139,31 +132,40 @@ nav > ul > li:hover {
 #about > div > h1 {
     font-size: 100px;
     font-weight: bold;
+    font-family:;
 }
 
-#about > div p:nth-child(2){
+#about > div p:nth-child(1){
     font-weight: bold;
     font-size: 27px;
-    /* font-size: clamp(18px, 2vw, 8vw); */
 }
 
-#about > div > div {
+#about > div > div > div{
     display: flex;
     flex-direction: row;
-    margin-top: 3vw;
     gap: 1vw;
 }
 
+#about > div {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    width: 480px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+
 #about > div > div button:first-child {
-    background-color: orange;
+    background-color: #eea302;
 }
 
 #about > div > div button:last-child {
-    background-color: blue;
+    background-color: #80d8da;
 }
 
 #about > div > div button:nth-child(2) {
-    background-color: red;
+    background-color: #ff3b25;
 }
 
 button {
@@ -173,6 +175,14 @@ button {
     border: solid black 1px;
     font-size: 22px;
     cursor: pointer;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 #about > div > div button:hover,
@@ -301,8 +311,10 @@ form button {
 
 /*footer styling*/
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
     /* margin-bottom: 100px; */
     margin-top: 50px;
     gap: 20px;
