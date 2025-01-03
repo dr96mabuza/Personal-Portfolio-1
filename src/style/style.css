@@ -59,9 +59,17 @@ section > h2 {
 }
 
 #header > div {
+    display: flex;
+    flex-direction: row;
     gap: 1vw;
     justify-content: center;
     align-items: center; 
+    height: 100%;
+}
+
+#header > div > p {
+    height: 100%;
+    align-content: center;
 }
 
 #header > div > img {
@@ -78,7 +86,7 @@ section > h2 {
 }
 
 #header p:nth-child(2):hover {
-    color: brown;
+    color: #926402;
 }
 
 nav > ul {
@@ -100,7 +108,7 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-    color: brown;
+    color: #926402;
 }
 
 #header > img {
@@ -117,7 +125,7 @@ nav > ul > li:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     height: 100%;
 }
 
@@ -132,7 +140,7 @@ nav > ul > li:hover {
 #about > div > h1 {
     font-size: 100px;
     font-weight: bold;
-    font-family:;
+    /* font-family:; */
 }
 
 #about > div p:nth-child(1){
@@ -149,7 +157,7 @@ nav > ul > li:hover {
 #about > div {
     display: flex;
     flex-direction: column;
-    height: 440px;
+    height: 385px;
     width: 480px;
     justify-content: space-evenly;
     align-items: flex-start;
