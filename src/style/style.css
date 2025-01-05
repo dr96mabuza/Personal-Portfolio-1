@@ -14,17 +14,17 @@ body {
 }
 
 input, textarea {
-    padding: 1vw;
+    padding: 8px 16px;
     background-color: whitesmoke;
     border: solid black 1px;
 }
 
 input {
-    width: calc((50vw / 2));
+    width: auto;
 }
 
 textarea {
-    width: calc(50vw * 0.66);
+    width: auto;
 }
 
 ul {
@@ -220,6 +220,7 @@ form button:hover {
 .project > div > h2 {
     margin-bottom: 20px;
     font-weight: bolder;
+    font-size: 26px;
 }
 
 .project > div > p {
@@ -290,14 +291,17 @@ form button:hover {
 #contact {
     display: flex;
     flex-direction: column;
-    /* height: 70vh; */
     margin-bottom: 10vh;
+    height: 100%;
+    align-self: center;
+
 }
 
 #contact > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2vw;
+    /* gap: 2vw; */
+    /* width: 1000px; */
 }
 
 #contact > div > div > div {
@@ -327,15 +331,17 @@ form div:first-child > div {
 
 #message {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     gap: 20px;
     margin-top: 20px;
 }
 
 form button {
     background-color: orange;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
 }
 
 /*footer styling*/
