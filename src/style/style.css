@@ -44,7 +44,7 @@ section ,footer, header {
 }
 
 section > h2 {
-    font-size: 6vw;
+    font-size: 42px;
     font-weight: bolder;
     margin-bottom: 2vw;
 }
@@ -204,11 +204,17 @@ form button:hover {
 }
 
 /*projects styling*/
+#projects {
+    /* width: 1200px; */
+    display: block;
+    align-self: center;
+}
 .project {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 5vh;
-    gap: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+    /* gap: 55px; */
 }
 
 .project > div > h2 {
@@ -216,9 +222,17 @@ form button:hover {
     font-weight: bolder;
 }
 
+.project > div > p {
+    max-width: 422px;
+}
+
+.project > div {
+    width: 585px;
+}
+
 .project > img {
-    height: 30vw;
-    width: calc(50vw - 3vw - 5vw);
+    height: 330px;
+    width: 490px;
     object-fit: cover;
 }
 
@@ -226,15 +240,17 @@ form button:hover {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    /* max-width: 1180px; */
+    align-self: center;
 }
 
 #resume > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 600px 600px;
 }
 
 #resume > div > h3 {
-    font-size: xx-large;
+    font-size: 26px;
     font-weight: bold;
 }
 
