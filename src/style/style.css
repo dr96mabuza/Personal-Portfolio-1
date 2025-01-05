@@ -54,6 +54,7 @@ section > h2 {
 #header {
     justify-content: space-between;
     align-self: center;
+    padding-top: 20px;
     width: 94%;
     background-color: whitesmoke;
 }
@@ -101,7 +102,7 @@ nav > ul :nth-child(2) {
 }
 
 nav > ul > li {
-    padding: 10px;
+    padding: 14px;
     cursor: pointer;
     font-weight: lighter;
     
@@ -162,6 +163,10 @@ nav > ul > li:hover {
     justify-content: space-evenly;
     align-items: flex-start;
     
+}
+
+#about > div > div > p {
+    margin-bottom: 10px;
 }
 
 #about > div > div button:first-child {
