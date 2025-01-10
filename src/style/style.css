@@ -43,10 +43,18 @@ section ,footer, header {
     padding-top: 2vw;
 }
 
+#projects, #resume, #contact {
+    width: 70%;
+}
+
 section > h2 {
     font-size: 42px;
     font-weight: bolder;
     margin-bottom: 2vw;
+}
+
+section:display {
+    transition: display 1s ease-in-out 1s;
 }
 
 
@@ -205,7 +213,6 @@ form button:hover {
 
 /*projects styling*/
 #projects {
-    /* width: 1200px; */
     display: block;
     align-self: center;
 }
@@ -214,7 +221,6 @@ form button:hover {
     flex-direction: row;
     justify-content: center;
     margin-top: 120px;
-    /* gap: 55px; */
 }
 
 .project > div > h2 {
@@ -228,13 +234,18 @@ form button:hover {
 }
 
 .project > div {
-    width: 585px;
+    width: 100%;
 }
 
 .project > img {
     height: 330px;
     width: 490px;
     object-fit: cover;
+    border-radius: 30px;
+}
+
+#projects > h2 {
+    margin-bottom: 0%;
 }
 
 #resume {
@@ -247,7 +258,7 @@ form button:hover {
 
 #resume > div {
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 1fr 1fr;
 }
 
 #resume > div > h3 {
@@ -274,7 +285,6 @@ form button:hover {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 3vw;
-    gap: 2vw;
 }
 
 .position {
