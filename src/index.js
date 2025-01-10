@@ -94,7 +94,7 @@ const displaySelectedSection = (button) => {
   } else {
     document
       .querySelector("#about")
-      .style.display = "grid";
+      .style.display = "flex";
   }
 };
 
