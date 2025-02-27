@@ -1,112 +1,103 @@
 @media (max-width: 425px) {
-  #header > div {
-    gap: 2.5vw;
+  html{
+    height: auto;
+    width: 100%;
   }
-
-  footer, 
-  #about,
-  .project,
-  #contact > div, 
-  form div:first-child, 
-  #resume > div, 
-  .resumeItem,
-  #skills > ul  {
-    grid-template-columns: 1fr;
-  }
-
-  #about, #resume, #projects, #contact {
-    margin-top: 7vh;
+  body {
+    display: flex;
+    justify-content: center;
+    height: auto;
   }
 
   #about {
-    height: 100%;
-  }
-
-  #about > img {
-    height: 92vw;
-    width: 92vw;
-    grid-row-start: 2;
-  }
-
-  #about > div > div {
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    /* width: 100vw;
+    padding: 30px; */
   }
 
-  button {
-      height: calc((100vw / 3) - 6vw);
-      width: calc((100vw / 3) - 6vw);
-  }
-
-  .project > img {
-    height: 50vw;
-    width: 94vw;
-  }
-
-  #contact {
-    height: fit-content;
-  }
-
-  input {
-    width: 90vw;
-  }
-
-  textarea {
-    width: 90vw;
-  }
-
-  #message {
-    flex-direction: column;
-  }
-
-  form {
-    margin-top: 5vh;
-  }
-
-  nav {
-    width: 0;
-    overflow: hidden;
+  #header > div > p:nth-child(3) {
+    display: none;
   }
 
   #header > img {
     display: block;
-    margin-left: 40vw;
   }
 
-  .description {
-    grid-column-start: 1;
-    grid-row-start: 3;
+  #about img {
+    width: 85vw;
+    height: 85vw;
   }
 
-  #skills > ul > li {
-    grid-column-start: 1;
+  #about button {
+    width: 30vw;
+    height: 30vw;
   }
 
-  #skills > ul {
-    margin: 10vw;
+  #about > div {
+    width: auto;
   }
 
-  .resumeItem {
-    margin-bottom: 10vh;
+  #about .buttons {
+    justify-content: space-evenly;
   }
 
-  #header p:nth-child(3) {
-    width: 0;
-    overflow: hidden;
+  nav {
+    display:none;
   }
 
-  #header > div > img {
-    height: 3vh;
-    width: 3vh;
+  footer {
+    flex-direction: column;
   }
 
-  #header p:nth-child(2) {
-    font-size:medium;
+  #resume {
+    width: 100%;
   }
+  #resume > div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
-  menu > div > ul > li:hover,
-  menu > div > img:hover {
-    cursor: pointer;
-  }
+#skills > ul {
+    list-style:square;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumeItem {
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    flex-direction: column;
+    margin-bottom: 3vw;
+}
+
+#projects {
+  /* display: flex; */
+  /* align-self: center; */
+  width: auto;
+}
+
+.project {
+  flex-direction: column;
+}
+
+.project > img {
+  height: 330px;
+  width: 80vw;
+}
+
+#contact > div {
+  /* display: grid; */
+  grid-template-columns: 1fr;
+  /* gap: 2vw; */
+  /* width: 1000px; */
+}
+
+form div:first-child {
+  grid-template-columns: 1fr;
+}
+
 }

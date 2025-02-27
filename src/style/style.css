@@ -53,8 +53,8 @@ section > h2 {
     margin-bottom: 2vw;
 }
 
-section:display {
-    transition: display 1s ease-in-out 1s;
+#about, #projects, #resume, #contact {
+    transition: display 0.5s ease-in;
 }
 
 
@@ -177,8 +177,14 @@ nav > ul > li:hover {
     margin-bottom: 10px;
 }
 
+#about > div > div button {
+    transition: background-color 0.5s ease-in-out;
+}
+
+
 #about > div > div button:first-child {
     background-color: #eea302;
+    transition: background-color 0.5s ease-in-out;
 }
 
 #about > div > div button:last-child {
@@ -216,11 +222,15 @@ form button:hover {
     display: block;
     align-self: center;
 }
+
+#projects :nth-child(2) {
+    margin-top: 40px;
+}
 .project {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .project > div > h2 {
@@ -241,7 +251,7 @@ form button:hover {
     height: 330px;
     width: 490px;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 #projects > h2 {
