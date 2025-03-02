@@ -105,6 +105,10 @@ form div:first-child {
   grid-template-columns: 1fr;
 }
 
+form {
+  margin-top: 30px;
+}
+
 #contact {
   align-self: auto;
   margin-left: 10px;
@@ -112,6 +116,12 @@ form div:first-child {
   width: 90%;
 }
 
+#contact > div > div > div {
+  margin-top: 15px;
+}
 
+footer {
+  margin-top: 25px;
+}
 
 }
