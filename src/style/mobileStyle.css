@@ -98,8 +98,9 @@
   /* display: grid; */
   grid-template-columns: 1fr;
   /* gap: 2vw; */
-  /* width: 1000px; */
+  width: 100%;
 }
+
 
 form div:first-child {
   grid-template-columns: 1fr;
@@ -124,4 +125,10 @@ footer {
   margin-top: 25px;
 }
 
+}
+
+@media (max-width: 320px) {
+  #contact > div > div, #contact > div > form {
+    width: 90%;
+  }
 }
