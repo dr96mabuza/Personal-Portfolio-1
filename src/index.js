@@ -2,6 +2,13 @@ import "./style/meyer.css";
 import "./style/style.css";
 // import "./style/tabletStyle.css";
 import "./style/mobileStyle.css";
+import header from "./js/header";
+import aboutSection from "./js/about";
+import footer from "./js/footer";
+
+document.querySelector("body").appendChild(header);
+document.querySelector("body").appendChild(aboutSection);
+document.querySelector("body").appendChild(footer);
 
 const profileSrc = require("./asserts/images/204Sifiso Mabuza simabuz022.jpg");
 const project2Src = require("./asserts/images/pankaj-patel-_SgRNwAVNKw-unsplash (1).jpg");
@@ -116,3 +123,4 @@ document
       backToTop();
     });
   });
+
