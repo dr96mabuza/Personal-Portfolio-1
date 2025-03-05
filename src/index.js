@@ -6,9 +6,11 @@ import header from "./js/header";
 import aboutSection from "./js/about";
 import footer from "./js/footer";
 import menu from "./js/menu";
+import contact from "./js/contact";
 
 document.querySelector("body").appendChild(header);
 document.querySelector("body").appendChild(aboutSection);
+document.querySelector("body").appendChild(contact);
 document.querySelector("body").appendChild(footer);
 document.querySelector("body").appendChild(menu);
 
