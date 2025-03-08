@@ -8,7 +8,7 @@ inputLabels.forEach((item) => {
   const inputContainer = document.createElement("div");
   const label = document.createElement("label");
   const input = document.createElement("input");
-  input.setAttribute("type", (item === "Email" ? "email" : "text"));
+  input.setAttribute("type", item === "Email" ? "email" : "text");
   label.setAttribute("for", item);
   label.textContent = item;
   inputContainer.appendChild(label);

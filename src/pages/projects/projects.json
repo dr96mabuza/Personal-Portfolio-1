@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+      "name": "Human Resource Information System",
+      "description": "Basic HR Information System for managing and organizing information about all employees in workplace. The goal is to have a centralized and efficient wat to manage employee information across the organization. ",
+      "links": [
+        "https://delightful-cajeta-c7d19a.netlify.app/",
+        "https://github.com/dr96mabuza/human-resources-information-system"
+      ]
+    },
+    {
+      "name": "Human Resource Information System Backend",
+      "description": "Express CRUD API Backend for HR Information System that uses JSON webtokens for authentication. Hosted on Render.",
+      "links": ["https://github.com/dr96mabuza/hris"]
+    },
+    {
+      "name": "Weather App",
+      "description": "Simple weather app that displays the weather details of the user searched location, uses the weather API and giphy API to get the weather information and weather related gif respectively. part of The Odin Project curriculum.",
+      "links": [
+        "https://dr96mabuza.github.io/Weather-App/ For more",
+        "https://github.com/dr96mabuza/Weather-App",
+        "https://www.theodinproject.com/lessons/node-path-javascript-weather-app"
+      ]
+    }
+  ]
+}

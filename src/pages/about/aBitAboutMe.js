@@ -1,5 +1,8 @@
 const aboutMe = document.createElement("div");
-const aboutMeText = "Software developer. " + "<br/>" + " Node.js, React, Python, Java and other developer tools and libraries.";
+const aboutMeText =
+  "Software developer. " +
+  "<br/>" +
+  " Node.js, React, Python, Java and other developer tools and libraries.";
 const paragraphOne = document.createElement("p");
 const paragraphTwo = document.createElement("p");
 

@@ -1,4 +1,5 @@
-const socialMediaProfileLinks = [ // to be moved to constants file
+const socialMediaProfileLinks = [
+  // to be moved to constants file
   {
     alt: "linkedin",
     href: "https://www.linkedin.com/in/sifiso-doctor-mabuza-901772208/",

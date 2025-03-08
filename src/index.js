@@ -2,11 +2,11 @@ import "./style/meyer.css";
 import "./style/style.css";
 // import "./style/tabletStyle.css";
 import "./style/mobileStyle.css";
-import header from "./js/header";
-import aboutSection from "./js/about";
-import footer from "./js/footer";
-import menu from "./js/menu";
-import contact from "./js/contact";
+import header from "./pages/header";
+import aboutSection from "./pages/about";
+import footer from "./pages/footer";
+import menu from "./pages/menu";
+import contact from "./pages/contact";
 
 document.querySelector("body").appendChild(header);
 document.querySelector("body").appendChild(aboutSection);
@@ -67,11 +67,11 @@ menuIcon.addEventListener("click", () => {
   menuElement.style.height = "100vh";
 });
 
-document
-  .querySelectorAll("menu > div > ul > li")
-  .forEach((element) => {
-    element.addEventListener("click", () => { closeMenu(); });
+document.querySelectorAll("menu > div > ul > li").forEach((element) => {
+  element.addEventListener("click", () => {
+    closeMenu();
   });
+});
 
 /**
  * hide all content sections
@@ -91,21 +91,17 @@ const displayNoneAll = () => {
  */
 const displaySelectedSection = (button) => {
   if (
-    ["resume", "contact"]
-      .toString()
-      .includes(button.textContent.toLowerCase())
+    ["resume", "contact"].toString().includes(button.textContent.toLowerCase())
   ) {
-    document
-      .querySelector(`#${button.textContent.toLowerCase()}`)
-      .style.display = "flex";
+    document.querySelector(
+      `#${button.textContent.toLowerCase()}`,
+    ).style.display = "flex";
   } else if (button.textContent.toLowerCase() === "projects") {
-    document
-      .querySelector(`#${button.textContent.toLowerCase()}`)
-      .style.display = "grid";
+    document.querySelector(
+      `#${button.textContent.toLowerCase()}`,
+    ).style.display = "grid";
   } else {
-    document
-      .querySelector("#about")
-      .style.display = "flex";
+    document.querySelector("#about").style.display = "flex";
   }
 };
 
@@ -119,7 +115,9 @@ const backToTop = () => {
 
 /* nav buttons */
 document
-  .querySelectorAll("#about button, nav > ul > li, #header p:nth-child(2), menu > div > ul > li")
+  .querySelectorAll(
+    "#about button, nav > ul > li, #header p:nth-child(2), menu > div > ul > li",
+  )
   .forEach((button) => {
     button.addEventListener("click", () => {
       displayNoneAll();
