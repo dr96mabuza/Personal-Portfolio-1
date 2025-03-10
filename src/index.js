@@ -4,33 +4,34 @@ import "./style/style.css";
 import "./style/mobileStyle.css";
 import header from "./pages/header";
 import aboutSection from "./pages/about";
-import footer from "./pages/footer";
 import menu from "./pages/menu";
 import contact from "./pages/contact";
+import projects from "./pages/projects";
+import footer from "./pages/footer";
+import profileSrc from "./asserts/images/204Sifiso Mabuza simabuz022.jpg";
+// const project2Src = require("./asserts/images/pankaj-patel-_SgRNwAVNKw-unsplash (1).jpg");
+// const project1Src = require("./asserts/images/Screenshot from 2024-03-11 12-41-12.png");
+// const project3Src = require("./asserts/images/Screenshot from 2024-03-11 13-02-41.png");
+import linkedinSrc from "./asserts/icons/iconmonstr-linkedin-1.svg";
+import githubSrc from "./asserts/icons/iconmonstr-github-5.svg";
+import closeWindowIcon from "./asserts/icons/window-close.svg";
+import openMenuIcon from "./asserts/icons/dots-vertical.svg";
 
 document.querySelector("body").appendChild(header);
 document.querySelector("body").appendChild(aboutSection);
 document.querySelector("body").appendChild(contact);
+document.querySelector("body").appendChild(projects);
 document.querySelector("body").appendChild(footer);
 document.querySelector("body").appendChild(menu);
 
-const profileSrc = require("./asserts/images/204Sifiso Mabuza simabuz022.jpg");
-const project2Src = require("./asserts/images/pankaj-patel-_SgRNwAVNKw-unsplash (1).jpg");
-const project1Src = require("./asserts/images/Screenshot from 2024-03-11 12-41-12.png");
-const project3Src = require("./asserts/images/Screenshot from 2024-03-11 13-02-41.png");
-const linkedinSrc = require("./asserts/icons/iconmonstr-linkedin-1.svg");
-const githubSrc = require("./asserts/icons/iconmonstr-github-5.svg");
-const closeWindowIcon = require("./asserts/icons/window-close.svg");
-const openMenuIcon = require("./asserts/icons/dots-vertical.svg");
-
 /* first project img */
-document.querySelector("img[alt='project1']").src = project1Src;
+// document.querySelector("img[alt='project1']").src = project1Src;
 
-/* second project img */
-document.querySelector("img[alt='project2']").src = project2Src;
+// /* second project img */
+// document.querySelector("img[alt='project2']").src = project2Src;
 
-/* third project img */
-document.querySelector("img[alt='project3']").src = project3Src;
+// /* third project img */
+// document.querySelector("img[alt='project3']").src = project3Src;
 
 /* header image and hero image */
 document.querySelector("#header > div > img").src = profileSrc;

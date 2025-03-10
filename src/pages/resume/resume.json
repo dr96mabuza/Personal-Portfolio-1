@@ -1,0 +1,79 @@
+{
+  "work experience": [
+    {
+      "duration": {
+        "start": "10/06/2024",
+        "end": ""
+      },
+      "company": "BCX",
+      "position": "MSSQL and Oracle Database Adminstration Trainee",
+      "description": "In a team of three administrators, tasked with managing and ensuring that client databases are secure and upto date. Tasks include applying software patches for virtual machines and database software, ensuring high availability, performance tuning, managing database access, completing client requests and many other adhoc tasks."
+    },
+    {
+      "duration": {
+        "start": "20/02/2024",
+        "end": "20/03/2024"
+      },
+      "company": "Codsoft",
+      "position": "Web Development Intern",
+      "description": "Codsoft Web development remote internship that provides practical work experience and an introduction to crafting and enhancing web-based systems. This opportunity offers engaging challenges and real-world projects, allowing you to gain hands-on experience in the dynamic fields of web and app development."
+    }
+  ],
+  "education": [
+    {
+      "duration": {
+        "start": "0/09/2022",
+        "end": "15/12/2023"
+      },
+      "institute": "WeThinkCode_",
+      "qualification": "Systems Development National Certificate",
+      "nqf": 5,
+      "description": "WeThinkCode_is a software development training academy. Our mission is to discover the sharpest minds from underserved communities in South Africa and equip them with the skills to become excellent software developers"
+    },
+    {
+      "duration": {
+        "start": "January 2018",
+        "end": "September 2021",
+        "comment": "incomplete"
+      },
+      "institute": "Tshwane University of Technology",
+      "qualification": "Electrical Engineering National Diploma",
+      "nqf": 6,
+      "description": "Tshwane University of Technology is the largest residential higher education institution in South Africa. The Electrical Engineering programme is the study and application of electricity, electronics and electromagnetism. Electrical Engineers study the uses of electricity and equipment for power generation and distribution."
+    },
+    {
+      "duration": {
+        "start": "January 2016",
+        "end": "April 2017",
+        "comment": "Complete"
+      },
+      "institute": "Ekurhuleni West TVET College",
+      "qualification": " N6 Certificate",
+      "nqf": 5,
+      "description": "Ekurhuleni West (TVET) College (EWC) is a Technical and Vocational Education and Training College. The Electrical field of study consists of two main fields, namely: Electrical Heavy Current and Light Current (also known as “Electronics”). Electricians are involved in the generation, installation, distribution and usage of electricity via electrically-operated equipment, e.g. domestic installation."
+    },
+    {
+      "duration": {
+        "start": "",
+        "end": "December 2013",
+        "comment": "Complete"
+      },
+      "institute": "Phumlani Secondary School",
+      "qualification": "Grade 12",
+      "nqf": 4,
+      "description": "Mathematics and Physical sciences stream."
+    }
+  ],
+  "skills": [
+    "Node.js",
+    "Python",
+    "React.js",
+    "TDD (Jest.js, NUnit and JUnit.)",
+    "Java",
+    "JavaScript",
+    "Version Control (Git)",
+    "SQL",
+    "Microsoft SQL Server Management System",
+    "Oracle SQL Developer"
+  ]
+}

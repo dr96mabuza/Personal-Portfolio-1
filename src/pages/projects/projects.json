@@ -6,12 +6,14 @@
       "links": [
         "https://delightful-cajeta-c7d19a.netlify.app/",
         "https://github.com/dr96mabuza/human-resources-information-system"
-      ]
+      ],
+      "src": "./../../asserts/images/Screenshot from 2024-03-11 12-41-12.png"
     },
     {
       "name": "Human Resource Information System Backend",
       "description": "Express CRUD API Backend for HR Information System that uses JSON webtokens for authentication. Hosted on Render.",
-      "links": ["https://github.com/dr96mabuza/hris"]
+      "links": ["https://github.com/dr96mabuza/hris"],
+      "src": "./../../asserts/images/pankaj-patel-_SgRNwAVNKw-unsplash (1).jpg"
     },
     {
       "name": "Weather App",
@@ -20,7 +22,8 @@
         "https://dr96mabuza.github.io/Weather-App/ For more",
         "https://github.com/dr96mabuza/Weather-App",
         "https://www.theodinproject.com/lessons/node-path-javascript-weather-app"
-      ]
+      ],
+      "src": "./../../asserts/images/Screenshot from 2024-03-11 13-02-41.png"
     }
   ]
 }

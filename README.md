@@ -36,6 +36,7 @@ npx webpack --watch
 
 - to run prettier on entire project. excludes dist file.
 - replace "." with filename to target specific file or files.
+
 ```bash
 npx prettier . --write
 ```
