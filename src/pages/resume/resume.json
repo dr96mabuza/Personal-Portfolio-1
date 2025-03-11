@@ -23,7 +23,8 @@
     {
       "duration": {
         "start": "0/09/2022",
-        "end": "15/12/2023"
+        "end": "15/12/2023",
+        "comment": "Complete"
       },
       "institute": "WeThinkCode_",
       "qualification": "Systems Development National Certificate",
@@ -34,7 +35,7 @@
       "duration": {
         "start": "January 2018",
         "end": "September 2021",
-        "comment": "incomplete"
+        "comment": "Incomplete"
       },
       "institute": "Tshwane University of Technology",
       "qualification": "Electrical Engineering National Diploma",
