@@ -2,8 +2,8 @@
   "work experience": [
     {
       "duration": {
-        "start": "10/06/2024",
-        "end": ""
+        "start": "10 June 2024",
+        "end": "Present"
       },
       "company": "BCX",
       "position": "MSSQL and Oracle Database Adminstration Trainee",
@@ -11,8 +11,8 @@
     },
     {
       "duration": {
-        "start": "20/02/2024",
-        "end": "20/03/2024"
+        "start": "20 February 2024",
+        "end": "20 March 2024"
       },
       "company": "Codsoft",
       "position": "Web Development Intern",
@@ -22,8 +22,8 @@
   "education": [
     {
       "duration": {
-        "start": "0/09/2022",
-        "end": "15/12/2023",
+        "start": "Sepptember 2022",
+        "end": "December 2023",
         "comment": "Complete"
       },
       "institute": "WeThinkCode_",
@@ -55,7 +55,7 @@
     },
     {
       "duration": {
-        "start": "",
+        "start": "January 2009",
         "end": "December 2013",
         "comment": "Complete"
       },
