@@ -1,5 +1,5 @@
 @media (max-width: 425px) {
-  html{
+  html {
     height: auto;
     width: 100%;
   }
@@ -23,7 +23,8 @@
     width: 90%;
   }
 
-  #header > div > p:nth-child(3), #header > div > img {
+  #header > div > p:nth-child(3),
+  #header > div > img {
     display: none;
   }
 
@@ -50,7 +51,7 @@
   }
 
   nav {
-    display:none;
+    display: none;
   }
 
   footer {
@@ -64,71 +65,70 @@
   #resume > div {
     display: grid;
     grid-template-columns: 1fr;
-}
+  }
 
-#skills > ul {
-    list-style:none;
+  #skills > ul {
+    list-style: none;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.resumeItem {
+  .resumeItem {
     display: flex;
     /* grid-template-columns: 1fr; */
     flex-direction: column;
     margin-bottom: 3vw;
-}
+  }
 
-#projects {
-  /* display: flex; */
-  /* align-self: center; */
-  width: 90%;
-}
+  #projects {
+    /* display: flex; */
+    /* align-self: center; */
+    width: 90%;
+  }
 
-.project {
-  flex-direction: column;
-}
+  .project {
+    flex-direction: column;
+  }
 
-.project > img {
-  height: 330px;
-  width: 100%;
-}
+  .project > img {
+    height: 330px;
+    width: 100%;
+  }
 
-#contact > div {
-  /* display: grid; */
-  grid-template-columns: 1fr;
-  /* gap: 2vw; */
-  width: 100%;
-}
+  #contact > div {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    /* gap: 2vw; */
+    width: 100%;
+  }
 
+  form div:first-child {
+    grid-template-columns: 1fr;
+  }
 
-form div:first-child {
-  grid-template-columns: 1fr;
-}
+  form {
+    margin-top: 30px;
+  }
 
-form {
-  margin-top: 30px;
-}
+  #contact {
+    align-self: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
 
-#contact {
-  align-self: auto;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  width: 90%;
-}
+  #contact > div > div > div {
+    margin-top: 15px;
+  }
 
-#contact > div > div > div {
-  margin-top: 15px;
-}
-
-footer {
-  margin-top: 25px;
-}
-
+  footer {
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 320px) {
-  #contact > div > div, #contact > div > form {
+  #contact > div > div,
+  #contact > div > form {
     width: 90%;
   }
 }
