@@ -1,6 +1,6 @@
 const copyrightContainer = document.createElement("div");
 const copyrightDetails = document.createElement("p");
-copyrightDetails.textContent = "&copy; 2024 By Sifiso Mabuza"; // fix special char
+copyrightDetails.textContent = "\u00A9 2024 By Sifiso Mabuza"; // fix special char
 const designInspo = document.createElement("p");
 designInspo.textContent = "Design from ";
 const designInspoWebpageLink = document.createElement("a");

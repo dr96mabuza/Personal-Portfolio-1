@@ -2,28 +2,19 @@
   "work experience": [
     {
       "duration": {
-        "start": "10 June 2024",
+        "start": "10 Jun 2024",
         "end": "Present"
       },
       "company": "BCX",
       "position": "MSSQL and Oracle Database Adminstration Trainee",
       "description": "In a team of three administrators, tasked with managing and ensuring that client databases are secure and upto date. Tasks include applying software patches for virtual machines and database software, ensuring high availability, performance tuning, managing database access, completing client requests and many other adhoc tasks."
-    },
-    {
-      "duration": {
-        "start": "20 February 2024",
-        "end": "20 March 2024"
-      },
-      "company": "Codsoft",
-      "position": "Web Development Intern",
-      "description": "Codsoft Web development remote internship that provides practical work experience and an introduction to crafting and enhancing web-based systems. This opportunity offers engaging challenges and real-world projects, allowing you to gain hands-on experience in the dynamic fields of web and app development."
     }
   ],
   "education": [
     {
       "duration": {
-        "start": "Sepptember 2022",
-        "end": "December 2023",
+        "start": "Sep 2022",
+        "end": "Dec 2023",
         "comment": "Complete"
       },
       "institute": "WeThinkCode_",
@@ -33,8 +24,8 @@
     },
     {
       "duration": {
-        "start": "January 2018",
-        "end": "September 2021",
+        "start": "Jan 2018",
+        "end": "Sep 2021",
         "comment": "Incomplete"
       },
       "institute": "Tshwane University of Technology",
@@ -44,8 +35,8 @@
     },
     {
       "duration": {
-        "start": "January 2016",
-        "end": "April 2017",
+        "start": "Jan 2016",
+        "end": "Apr 2017",
         "comment": "Complete"
       },
       "institute": "Ekurhuleni West TVET College",
@@ -55,8 +46,8 @@
     },
     {
       "duration": {
-        "start": "January 2009",
-        "end": "December 2013",
+        "start": "Jan 2009",
+        "end": "Dec 2013",
         "comment": "Complete"
       },
       "institute": "Phumlani Secondary School",

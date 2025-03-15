@@ -8,7 +8,8 @@ const education = (educationItems) => {
     educationContainer.setAttribute("class", "resumeItem");
     const duration = document.createElement("p");
     duration.setAttribute("class", "duration");
-    duration.textContent = `${element.duration.start} - ${element.duration.end} | ${element.duration.comment}`;
+    duration.setAttribute('style', 'white-space: pre-line;');
+    duration.textContent = `${element.duration.start} - ${element.duration.end} \r\n${element.duration.comment}`;
     educationContainer.appendChild(duration);
 
     const position = document.createElement("p");
