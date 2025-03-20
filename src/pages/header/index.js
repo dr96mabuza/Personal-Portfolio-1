@@ -18,18 +18,16 @@ div.appendChild(img);
 div.appendChild(ownerName);
 div.appendChild(ownerTitle);
 
-const burgerMenu = document.createElement("img")
+const burgerMenu = document.createElement("img");
 /* open menu icon */
 // const burgerMenuIcon = document.querySelector("#header > img");
 burgerMenu.src = openMenuIcon;
 burgerMenu.addEventListener("click", () => {
-  openMenu()
+  openMenu();
 });
 
 header.appendChild(div);
 header.appendChild(burgerMenu);
 header.appendChild(nav);
-
-
 
 export default header;

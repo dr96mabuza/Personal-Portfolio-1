@@ -12,7 +12,6 @@ import contact from "./pages/contact";
 import projects from "./pages/projects";
 import footer from "./pages/footer";
 
-
 // add pages to main document/body
 document.querySelector("body").appendChild(header);
 document.querySelector("body").appendChild(aboutSection);
@@ -21,8 +20,6 @@ document.querySelector("body").appendChild(resume);
 document.querySelector("body").appendChild(projects);
 document.querySelector("body").appendChild(footer);
 document.querySelector("body").appendChild(menu);
-
-
 
 /**
  * hide all content sections

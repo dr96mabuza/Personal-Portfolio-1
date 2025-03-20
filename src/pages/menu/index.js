@@ -14,11 +14,11 @@ const closeMenu = () => {
   menu.style.height = "0vh";
 };
 
-// open menu 
+// open menu
 export const openMenu = () => {
   menu.style.transition = "height 1s ease-in-out";
   menu.style.height = "100vh";
-}
+};
 
 /* close menu window icon */
 img.src = closeWindowIcon;
