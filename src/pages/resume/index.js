@@ -7,7 +7,7 @@ const separation = (fieldName) => {
   const container = document.createElement("div");
   container.setAttribute("class", "separation");
   const header = document.createElement("h3");
-  header.textContent = fieldName.charAt(0).toUpperCase() + fieldName.slice(1);;
+  header.textContent = fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
   container.appendChild(header);
   const contentContainer = document.createElement("div");
   const resumeItems =

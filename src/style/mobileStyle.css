@@ -1,30 +1,53 @@
 @media (max-width: 425px) {
-  html {
+  html,
+  body {
     height: auto;
+  }
+
+  html,
+  .project > img,
+  #contact > div {
     width: 100%;
   }
-  body {
+
+  #contact > div,
+  form div:first-child,
+  #resume > div,
+  .resumeItem {
+    grid-template-columns: 1fr;
+  }
+
+  .project,
+  footer,
+  #skills > ul {
+    flex-direction: column;
+  }
+
+  body,
+  #about,
+  #skills > ul {
     display: flex;
+  }
+
+  #about,
+  body {
     justify-content: center;
-    height: auto;
   }
 
   #about {
-    /* height: 100%; */
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
-    /* width: 100vw;
-    padding: 30px; */
   }
 
-  #header {
+  #header,
+  #projects,
+  #contact {
     width: 90%;
   }
 
   #header > div > p:nth-child(3),
-  #header > div > img {
+  #header > div > img,
+  nav {
     display: none;
   }
 
@@ -50,71 +73,59 @@
     justify-content: space-evenly;
   }
 
-  nav {
-    display: none;
-  }
-
-  footer {
-    flex-direction: column;
+  .separation,
+  #resume {
+    gap: 10px;
   }
 
   #resume {
     width: auto;
     margin: 0px 10px;
   }
-  #resume > div {
+  #resume > div,
+  .resumeItem {
     display: grid;
-    grid-template-columns: 1fr;
   }
 
   #skills > ul {
     list-style: none;
-    display: flex;
-    flex-direction: column;
   }
 
   .resumeItem {
-    display: flex;
-    /* grid-template-columns: 1fr; */
-    flex-direction: column;
-    margin-bottom: 3vw;
+    margin-bottom: 15px;
+    gap: 5px;
   }
 
-  #projects {
-    /* display: flex; */
-    /* align-self: center; */
-    width: 90%;
+  .position {
+    grid-row-start: 1;
   }
 
-  .project {
-    flex-direction: column;
+  .description {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    margin-top: 0px;
   }
 
   .project > img {
     height: 330px;
-    width: 100%;
   }
 
-  #contact > div {
-    /* display: grid; */
-    grid-template-columns: 1fr;
-    /* gap: 2vw; */
-    width: 100%;
-  }
-
-  form div:first-child {
-    grid-template-columns: 1fr;
+  #projects :nth-child(2) {
+    margin-top: 20px;
   }
 
   form {
     margin-top: 30px;
   }
 
+  form button {
+    padding: 5px 0px;
+  }
+
   #contact {
     align-self: auto;
     margin-left: 10px;
     margin-bottom: 10px;
-    width: 90%;
   }
 
   #contact > div > div > div {
