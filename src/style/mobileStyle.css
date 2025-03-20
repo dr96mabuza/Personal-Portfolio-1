@@ -59,8 +59,10 @@
   }
 
   #resume {
+    gap: 10px;
     width: auto;
     margin: 0px 10px;
+    
   }
   #resume > div {
     display: grid;
@@ -74,10 +76,25 @@
   }
 
   .resumeItem {
-    display: flex;
-    /* grid-template-columns: 1fr; */
-    flex-direction: column;
-    margin-bottom: 3vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
+    margin-bottom: 15px;
+    gap: 5px
+  }
+
+  .position {
+    grid-row-start: 1;
+  }
+
+  .description {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    margin-top: 0px;
+  }
+
+ .separation {
+    gap: 10px;
   }
 
   #projects {
@@ -95,6 +112,10 @@
     width: 100%;
   }
 
+  #projects :nth-child(2) {
+    margin-top: 20px;
+}
+
   #contact > div {
     /* display: grid; */
     grid-template-columns: 1fr;
@@ -109,6 +130,10 @@
   form {
     margin-top: 30px;
   }
+
+  form button {
+    padding: 5px 0px;
+}
 
   #contact {
     align-self: auto;
