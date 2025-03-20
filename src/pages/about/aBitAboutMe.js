@@ -8,7 +8,7 @@ const paragraphTwo = document.createElement("p");
 
 paragraphOne.textContent = "A bit about me";
 paragraphTwo.textContent = aboutMeText;
-paragraphTwo.setAttribute('style', 'white-space: pre-line;');
+paragraphTwo.setAttribute("style", "white-space: pre-line;");
 
 aboutMe.appendChild(paragraphOne);
 aboutMe.appendChild(paragraphTwo);
