@@ -1,5 +1,5 @@
 const contactForm = document.createElement("form");
-contactForm.setAttribute("action", "");
+contactForm.setAttribute("action", "/");
 contactForm.setAttribute("method", "post");
 
 const inputsContainer = document.createElement("div");
@@ -9,7 +9,10 @@ inputLabels.forEach((item) => {
   const label = document.createElement("label");
   const input = document.createElement("input");
   input.setAttribute("type", item === "Email" ? "email" : "text");
-  label.setAttribute("for", item);
+  input.setAttribute("for", item);
+  input.setAttribute("min", item === "Email" ? 8 : 3);
+  input.setAttribute("max", 45);
+  input.required = true;
   label.textContent = item;
   inputContainer.appendChild(label);
   inputContainer.appendChild(input);
@@ -22,8 +25,11 @@ const messageInputContainer = document.createElement("div");
 const label = document.createElement("label");
 label.textContent = "Message";
 const textArea = document.createElement("textarea");
-textArea.setAttribute("cols", "30");
-textArea.setAttribute("rows", "10");
+textArea.setAttribute("cols", 30);
+textArea.setAttribute("rows", 10);
+textArea.setAttribute("min", 10);
+textArea.setAttribute("max", 250);
+textArea.required = true;
 messageInputContainer.appendChild(label);
 messageInputContainer.appendChild(textArea);
 const submitButton = document.createElement("button");
